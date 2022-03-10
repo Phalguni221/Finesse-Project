@@ -21,3 +21,21 @@ export const sliderItems = [
       bg: "fbf0f4",
     },
   ];
+
+  export const categories = [
+    {
+      id: 1,
+      img: "https://images.unsplash.com/photo-1619679692192-30d912a55f8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80",
+      title: "SHIRT STYLE !!!",
+    },
+    {
+      id: 2,
+      img: "https://images.unsplash.com/photo-1608709093358-13c7d0d6efda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      title: "OFF SHOLDERS !!!",
+    },
+    {
+      id: 3,
+      img: "https://images.unsplash.com/photo-1548267088-9ba3061a5749?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      title: "SHORT JACKETS !!!",
+    },
+  ];

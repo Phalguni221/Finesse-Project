@@ -25,17 +25,17 @@ export const sliderItems = [
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: "https://images.unsplash.com/photo-1619679692192-30d912a55f8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80",
+      title: "SHIRT STYLE !!!",
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://images.unsplash.com/photo-1608709093358-13c7d0d6efda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      title: "OFF SHOLDERS !!!",
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      img: "https://images.unsplash.com/photo-1548267088-9ba3061a5749?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      title: "SHORT JACKETS !!!",
     },
   ];

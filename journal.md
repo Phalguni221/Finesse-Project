@@ -24,21 +24,29 @@
 
 3/7/22 (Mon)
 13. Worked on front-end using React for Homepage -Sweta
-14. Worked on front-end using React for Sign-in page- Sriya
-15. Created other sections/pages of SPA site (Account.js, Register.js, Footer.js) - Sriya
-16. Replaced App.js with Home.js in pages folder as primary root file for app (mentioned in index.js as <Home />) -Sriya
-17. Changed name of "App.test.js" to "Home.test.js" to test code in Home.js file - Sriya 
+14. Created Navbar -Sweta
+15. created lang option and search bar and added material icons for shopping cart and search bar -Sweta
+        a. Did "npm install @material-ui/core @material-ui/icons" for icons -Sweta
+16. Worked on front-end using React for Sign-in page- Sriya
+17. Created other sections/pages of SPA site (Account.js, Register.js, Footer.js) - Sriya
+18. Replaced App.js with Home.js in pages folder as primary root file for app (mentioned in index.js as <Home />) -Sriya
+19. Changed name of "App.test.js" to "Home.test.js" to test code in Home.js file - Sriya 
 
 3/8/22 (Tues)
-18. Modified oritentation and location of navbar items -Sriya 
-19. Added Youtube video for background music - Sriya
-20. Worked on creating useable links to Register.js and SignIn.js pages - Sriya 
-21. Improved layout of Register and Signin pages -Sriya
-22. Added description to both Register and SignIn pages - Sriya 
+20. Modified oritentation and location of navbar items -Sriya 
+21. Added Youtube video for background music - Sriya
+22. Worked on creating useable links to Register.js and SignIn.js pages - Sriya 
+23. Improved layout of Register and Signin pages -Sriya
+24. Added description to both Register and SignIn pages - Sriya 
 
 3/9/22 (Wed)
-23. Added form information to Register.js - Sriya
-24. Added form information to SignIn.js - Sriya
-25. Created link to Survey.js - Sriya
-26. Added bacid decription and info to Survey form - Sriya
+25. Added form information to Register.js - Sriya
+26. Added form information to SignIn.js - Sriya
+27. Created link to Survey.js - Sriya
+28. Added bacid decription and info to Survey form - Sriya
+29. Merged both group member work on github and solved branch issues together -Sweta and Sriya
+30. Created home page, collection button, added Image andinfo about sale -Sweta
+31. Created Announcement bar -Sweta
+32. Created arrows for slider -Sweta
+33. Created horizontal Slider and added 3 pages with pics and buttons - Sweta
 

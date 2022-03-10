@@ -1,5 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
-import styled from "styled-components"
+import styled from "styled-components";
+import { useState } from "react";
+import { sliderItems } from "../data";
 
 
 // Container
@@ -9,7 +11,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
-    background-color: pink;
+    background-color: fedada;
     position: relative;
 `;
 
@@ -94,40 +96,40 @@ const Button = styled.button`
 
 
 
-function Slider() {
+const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  };
+
   return (
     <Container>
-        <Arrow direction="left">
-           <ArrowLeftOutlined/> 
-        </Arrow>
-
-
-          {/* to write slides */}
-        <Wrapper>
-            <Slide>
-
+      <Arrow direction="left" onClick={() => handleClick("left")}>
+        <ArrowLeftOutlined />
+      </Arrow>
+      <Wrapper slideIndex={slideIndex}>
+        {sliderItems.map((item) => (
+          <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
-                <Image src="https://images.unsplash.com/photo-1644577584452-ea4d39b9dcf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2008&q=80"/>
+              <Image src={item.img} />
             </ImgContainer>
-
             <InfoContainer>
-                <Title>SUMMER TIME GOOD TIME</Title>
-
-                <Desc>Summertime is beach time and  We have  hundreds of ways for you to enjoy your summer with Sun, Sand and Beach, Wanna Explore ?<br/>Why not !!!! <br/>Just click the Button Bellow to look our collection <br/>#HOTDAYS #FUNDAYS</Desc>
-
-                <Button>Collection</Button>
-
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
+              <Button>SHOW NOW</Button>
             </InfoContainer>
-
-            </Slide>
-            
-        </Wrapper>
-
-        <Arrow direction="right">
-           <ArrowRightOutlined/> 
-        </Arrow>
+          </Slide>
+        ))}
+      </Wrapper>
+      <Arrow direction="right" onClick={() => handleClick("right")}>
+        <ArrowRightOutlined />
+      </Arrow>
     </Container>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;

@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Announcement from '../components/Announcement';
 import Slider from '../components/Slider';
 import Categories from '../components/Categories';
+import Products from '../components/Products';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Navbar/>
             <Slider/>
             <Categories/>
+            <Products/>
             
 
         </BrowserRouter>

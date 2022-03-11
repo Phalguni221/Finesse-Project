@@ -8,6 +8,7 @@ import {useState} from 'react'
 import SignIn from './SignIn'
 import Register from './Register'
 import Survey from './Survey'
+import Slider from './Slider'
 
 
 
@@ -139,14 +140,11 @@ const Navbar = () => {
           <hr></hr>
        
           <Right>
-         <MenuItem>
-         <Link to="/">
-              <form method="GET" action="Home">
-             <input type="Submit" name="Home" id="Home" value="Home"/>
-             </form> 
-             </Link>     
-         </MenuItem>
-
+            <MenuItem>
+            <form method="GET" action="Slider">
+              <input type="Submit" name="Home" id="Home" value="Home"/>
+            </form>
+            </MenuItem>
               <MenuItem> 
               <form method="GET" action="Register">
              <input type="Submit" name="Register" id="Register" value="Register"/>
@@ -165,10 +163,10 @@ const Navbar = () => {
              </form> 
                 </MenuItem>
 
+       
+
               <div className="display">
         <Routes>
-  
-       
           <Route path="Register" element={
             <Register/>
           } />
@@ -196,3 +194,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

@@ -3,6 +3,7 @@ import React from 'react'
 import styled from "styled-components";
 
 
+//For whole product block
 const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -19,6 +20,8 @@ const Info = styled.div`
   cursor: pointer;
 `;
 
+
+//For product container
 const Container = styled.div`
   flex: 1;
   margin: 5px;
@@ -34,19 +37,15 @@ const Container = styled.div`
   }
 `;
 
-// const Circle = styled.div`
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background-color: white;
-//   position: absolute;
-// `;
 
+//For Images
 const Image = styled.img`
   height: 75%;
   z-index: 2;
 `;
 
+
+//For Icons 
 const Icon = styled.div`
   width: 40px;
   height: 40px;
@@ -66,7 +65,7 @@ const Icon = styled.div`
 const Product = ({item}) => {
     return (
         <Container>
-            {/* <Circle/> */}
+            
             <Image src={item.img}/>
             <Info>
                 <Icon>

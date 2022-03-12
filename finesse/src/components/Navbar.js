@@ -9,6 +9,7 @@ import SignIn from './SignIn'
 import Register from './Register'
 import Survey from './Survey'
 import Slider from './Slider'
+import Intro from './Intro'
 
 
 
@@ -141,7 +142,7 @@ const Navbar = () => {
        
           <Right>
             <MenuItem>
-            <form method="GET" action="Slider">
+            <form method="GET" action="Intro">
               <input type="Submit" name="Home" id="Home" value="Home"/>
             </form>
             </MenuItem>
@@ -167,6 +168,9 @@ const Navbar = () => {
 
               <div className="display">
         <Routes>
+        <Route path="Intro" element={
+            <Intro/>
+          } />
           <Route path="Register" element={
             <Register/>
           } />

@@ -6,6 +6,11 @@ body {
 background-color: beige;
 }
 
+title {
+    font:20px;
+    color:pink;
+    background-color:black;
+}
 h1{
    font:50px;
    color:black;
@@ -19,6 +24,10 @@ h2 {
     text-align: center;
 }
 
+br {
+    display: block;
+    margin: 10px 0;
+ }
 text {
     background-color:black; 
     color:hotpink;

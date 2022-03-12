@@ -8,6 +8,8 @@ import Categories from '../components/Categories';
 import Products from '../components/Products';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
+import Intro from '../components/Intro'
+
 
 
 export default function Home () {
@@ -15,7 +17,6 @@ export default function Home () {
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
-            <br></br>
             <br></br>
             <br></br>
             <br></br>

@@ -62,7 +62,7 @@ export default function Home () {
             <br></br>
             <br></br>
             <br></br>
-            <Cart/>
+            {/* <Cart/> */}
             <br></br>
             <br></br>
             <br></br>

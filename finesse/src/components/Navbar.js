@@ -10,6 +10,8 @@ import Register from './Register'
 import Survey from './Survey'
 import Slider from './Slider'
 import Intro from './Intro'
+import Cart from './Cart'
+
 
 
 
@@ -117,6 +119,7 @@ margin-right:300px;
  `; 
 
 
+
 const Navbar = () => {
   return (
     <Container>
@@ -170,7 +173,12 @@ const Navbar = () => {
              <input type="Submit" name="Survey" id="Survey" value="Survey"/>
              </form> 
                 </MenuItem>
-
+                <MenuItem>
+                <form method="GET" action="Cart">
+             <input type="Submit" name="Cart" id="Cart" value="Cart"/>
+             </form> 
+                </MenuItem>
+           
        
 
               <div className="display">
@@ -190,7 +198,10 @@ const Navbar = () => {
              <Route path="Survey" element={
             <Survey/>
             } />
-        </Routes>
+              <Route path="Cart" element={
+            <Cart/>
+            } />
+          </Routes>
               </div> 
            
             <MenuItem>

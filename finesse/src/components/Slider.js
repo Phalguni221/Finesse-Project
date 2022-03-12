@@ -13,9 +13,9 @@ const Container = styled.div`
 
 // For Arrow style
 const Arrow = styled.div`
-    width: 150px;
-    height:100px;
-    background-color: #fff7f7;
+    width: 100px;
+    height:50px;
+    background-color: hotpink;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@ const Arrow = styled.div`
     right: ${(props) => props.direction === "right" && "10px"};;
     margin: auto;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0.5;
     z-index: 2;
     padding:
 `;
@@ -76,7 +76,7 @@ const Title = styled.h1`
 
 //For Discription
 const Desc = styled.p`
-  margin: 50px 0px;
+  margin: 50px 30px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -95,7 +95,7 @@ const Button = styled.button`
 
 const CategoryContainer = styled.div`
     display: flex;
-    padding: 20px;
+    padding: 30px;
     justify-content: space-between;
 `;
 

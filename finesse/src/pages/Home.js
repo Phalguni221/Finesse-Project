@@ -9,6 +9,7 @@ import Products from '../components/Products';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
 import Intro from '../components/Intro'
+import Newsletter from '../components/Newsletter';
 
 
 
@@ -66,6 +67,7 @@ export default function Home () {
             <br></br>
             <Categories/>
             <Products/>
+            <Newsletter/>
             <Footer/>
         </BrowserRouter>
      

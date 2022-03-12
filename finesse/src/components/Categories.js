@@ -3,19 +3,20 @@ import { categories } from "../data";
 import CategoryItem from "./CategoryItem";
 
 
-const Container = styled.div`
+const Container3 = styled.div`
     display: flex;
-    padding: 20px;
+    padding: 30px;
     justify-content: space-between;
+    position:relative;
 `;
 
 const Categories = () => {
     return (
-        <Container>
+        <Container3>
         {categories.map((item) => (
             <CategoryItem item={item} key={item.id} />
           ))} 
-        </Container>
+        </Container3>
     );
 };
 

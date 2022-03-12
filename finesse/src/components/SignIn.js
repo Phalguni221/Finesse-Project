@@ -7,6 +7,7 @@ import styled from 'styled-components'
 const Container2 = styled.div `
  height:0.01px;
  width:600px;
+
   background-color: beige;
   align-items: center;
 
@@ -14,10 +15,27 @@ const Container2 = styled.div `
 
 //Parent-wrapper for nav 
 const Wrapper2 = styled.div `
-  padding: 200px 100px;
+  padding: 200px 70px;
   justify-content: space-between;
   margin-right:80px;
 `;
+
+//For Right side things
+const Right = styled.div`
+  flex: 1;
+  display: flex;
+  aline-item: center;
+  justify-content: flex-end;
+  margin-right:100px;
+  `;
+ //for menuitems, cart and all
+ const Buttons = styled.div`
+ font-size: 17px;
+ cursor: pointer;
+ margin-right: 55px;
+ display: flex;
+ flex: flex-wrap
+ `; 
 
 export default function SignIn () {
   return (
@@ -29,18 +47,18 @@ export default function SignIn () {
       If you aren't a member but want to become one, please go to the sign-in page to become a new member of Finesse!</h2>
       <br></br>
       <br></br>
-      <p>
-    <form method="GET" action="Survey">
+      <Right>
+      <Buttons>
+        <form method="GET" action="Survey">
     <input type="Submit" name="Survey" id="Survey" value="Survey"/>
     </form>
-    </p>
-    <br></br>
-    <br></br>
-    <p>
+      </Buttons>
+      <Buttons>
     <form method="GET" action="Account">
-      <input type="Submit" name="Account" id="Account" value="Account"/>
+      <input type="Submit" name="Login" id="Login" value="Login"/>
       </form>
-    </p>
+      </Buttons>
+      </Right>
     </Wrapper2>
     </Container2>
   </div>

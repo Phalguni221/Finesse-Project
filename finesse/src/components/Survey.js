@@ -3,6 +3,7 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
+import Footer from './Footer'
 
 const Container2 = styled.div `
  height:0.01px;
@@ -14,7 +15,7 @@ const Container2 = styled.div `
 
 //Parent-wrapper for nav 
 const Wrapper2 = styled.div `
-  padding: 200px 10px;
+  padding: 100px 10px;
   justify-content:"stylece-between;
   margin-right:80px;
 `;
@@ -91,6 +92,7 @@ export default function Survey () {
         </form>
     </Wrapper2>
     </Container2>
+  
   </div>
         
   )

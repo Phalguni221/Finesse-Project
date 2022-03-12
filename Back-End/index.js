@@ -13,6 +13,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
 //Routes
-app.get('/', (req, res) => {
-    res.render('Home')
+// app.get('/', (req, res) => {
+//     res.render('Home')
+//   })
+
+
+  app.get('/Home/ShoppingCart', (req, res) => {
+    res.render('ShoppingCart')
   })

@@ -9,6 +9,10 @@ import SignIn from './SignIn'
 import Register from './Register'
 import Survey from './Survey'
 import Slider from './Slider'
+import Intro from './Intro'
+
+
+
 
 
 //React styled component in use
@@ -137,20 +141,15 @@ const Navbar = () => {
           <hr></hr>
        
           <Right>
-         <MenuItem>
-         <Link to="/Slider">
-         <form method="GET" action="Slider">
-             <input type="Submit" name="Home" id="Home" value="Home"/>
-             </form> 
-             </Link>    
-                </MenuItem>
-
-              <MenuItem>
-              <Link to="/Register">
+            <MenuItem>
+            <form method="GET" action="Intro">
+              <input type="Submit" name="Home" id="Home" value="Home"/>
+            </form>
+            </MenuItem>
+              <MenuItem> 
               <form method="GET" action="Register">
              <input type="Submit" name="Register" id="Register" value="Register"/>
              </form> 
-             </Link>
              </MenuItem>
 
                 <MenuItem>
@@ -165,23 +164,25 @@ const Navbar = () => {
              </form> 
                 </MenuItem>
 
+       
+
               <div className="display">
         <Routes>
-        <Route path="Slider" element={
-            <Slider/>
+        <Route path="Intro" element={
+            <Intro/>
           } />
           <Route path="Register" element={
             <Register/>
           } />
-          <Route path="/SignIn" element={
+          <Route path="SignIn" element={
             <SignIn/>
             } />
-             <Route path="/Survey" element={
+             <Route path="Survey" element={
             <Survey/>
             } />
         </Routes>
-              </div>
-
+              </div> 
+           
             <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
@@ -190,9 +191,8 @@ const Navbar = () => {
          
         </Right>
           
-          
       </Wrapper>
-      
+    
     </Container>
   )
 }

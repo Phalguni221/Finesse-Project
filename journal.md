@@ -43,7 +43,7 @@
 25. Added form information to Register.js - Sriya
 26. Added form information to SignIn.js - Sriya
 27. Created link to Survey.js - Sriya
-28. Added bacid decription and info to Survey form - Sriya
+28. Added basic decription and info to Survey form - Sriya
 29. Merged both group member work on github and solved branch issues together -Sweta and Sriya
 30. Created home page, collection button, added Image andinfo about sale -Sweta
 31. Created Announcement bar -Sweta
@@ -54,4 +54,11 @@
 34. Created issues for basic funtionality in github -Sweta
 35. Created Categories for Clothing with Buttons and Titles -Sweta
 36. Created Sub Categories for shopping -Sweta
+
+3/11/22 (Fri)
+37.
+
+3/12/22 (Sat)
+38.
+
 

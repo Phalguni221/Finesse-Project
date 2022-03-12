@@ -3,17 +3,18 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
+import SignIn from './SignIn.js'
+import Results from './Results'
 
 const Container2 = styled.div `
  height:0.01px;
-  width:600px;
+  width:700px;
   background-color: beige;
-
 `;
 
-//Parent-wrapper for nav 
+//Parent-wrapper for navbar 
 const Wrapper2 = styled.div `
-  padding: 200px 100px;
+  padding: 100px 100px;
   justify-content: space-between;
   margin-right:80px;
 `;
@@ -27,7 +28,7 @@ export default function Register() {
     <h2>If you want to become a new member of Finesse, please fill out and submit the questionnaire below!</h2>
     <br></br>
     <br></br>
-                <form method ="GET" action="SignIn.js">
+                <form method ="GET" action="Results">
                   <div>
                     <label for="firstname">Your First Name<span class="required-field">*</span></label>
                     <input type="text" minlength="2" maxlength="35" id="firstname" name="firstname" placeholder="firstname" required />

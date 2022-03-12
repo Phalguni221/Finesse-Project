@@ -3,24 +3,57 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import {useState} from 'react'
 
 import SignIn from './SignIn'
 import Register from './Register'
 import Survey from './Survey'
+import Slider from './Slider'
+import Intro from './Intro'
+import Cart from './Cart'
+
+
+
+
+
+
+
 
 
 //React styled component in use
 const Container = styled.div `
-  height: 60px;
+  height: 70px;
   background-color: pink;
-`
+`;
 
 //Parent-wrapper for nav 
 const Wrapper = styled.div `
-  padding: 10px 20px;
-  display: flex;
+  padding: 10px 50px;
+  display:flex;
   align-items: center;
+  margin-left:100px
   justify-content: space-between;
+`;
+
+
+// For Arrow style
+const Arrow = styled.div`
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: ${(props) => props.direction === "left" && "10px"};
+    right: ${(props) => props.direction === "right" && "10px"};;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 2;
 `;
 
 //for EN lang
@@ -35,7 +68,7 @@ const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 25px;
-  padding: 5px
+  padding: 1px
 `;
 
 //for searchbar input
@@ -60,7 +93,7 @@ const Logo = styled.h1`
 flex: 1;
 display: flex;
 aline-item: center;
-  font-weight: bold;
+font-weight: bold;
 `;
 
 //For Right side things
@@ -69,21 +102,23 @@ const Right = styled.div`
   display: flex;
   aline-item: center;
   justify-content: flex-end;
+  margin-right:500px;
   `;
 
 //For Audio
 const Video = styled.div`
 text-align:center;
 margin-right:300px;
-
 `;
 
  //for menuitems, cart and all
  const MenuItem = styled.div`
- font-size: 14px;
+ font-size: 17px;
  cursor: pointer;
- margin-left: 25px;
+ margin-right: 35px;
  `; 
+
+
 
 const Navbar = () => {
   return (
@@ -91,58 +126,84 @@ const Navbar = () => {
       <Wrapper>
           <Left>
             <Language>EN</Language>
-
             <SearchContainer>
               <Input/>
               <Search style={{ color: "purple", fontSize: 16 }}/>
             </SearchContainer> 
           </Left>
         <p>
-      <Video>
+      {/* <Video>
         <p>Click for some background music while you shop!</p>
       <iframe width="50" height="30" src="https://www.youtube.com/embed/FxU7XEMonbk" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
-      </Video>
+      </Video> */}
       </p>
           <Center>
             <Logo>
               FINESSE
-            </Logo>
-            
+            </Logo>     
           </Center>
-
+          <hr></hr>
+       
           <Right>
+            <MenuItem>
+
+            <form method="GET" action="Intro">
+
+            <form method="GET" action="Slider">
+
+              <input type="Submit" name="Home" id="Home" value="Home"/>
+            </form>
+            </MenuItem>
+              <MenuItem> 
+              <form method="GET" action="Register">
+             <input type="Submit" name="Register" id="Register" value="Register"/>
+             </form> 
+             </MenuItem>
+
                 <MenuItem>
-                <Link to="/">Home</Link>
+                <form method="GET" action="SignIn">
+             <input type="Submit" name="SignIn" id="SignIn" value="SignIn"/>
+             </form> 
                 </MenuItem>
 
                 <MenuItem>
-                <Link to="/Register"> Register</Link>
+                <form method="GET" action="Survey">
+             <input type="Submit" name="Survey" id="Survey" value="Survey"/>
+             </form> 
                 </MenuItem>
-
                 <MenuItem>
-                <Link to="/SignIn">Sign-in</Link>
+                <form method="GET" action="Cart">
+             <input type="Submit" name="Cart" id="Cart" value="Cart"/>
+             </form> 
                 </MenuItem>
-
-                <MenuItem>
-                <Link to="/Survey">Survey</Link>
-                </MenuItem>
+           
+       
 
               <div className="display">
         <Routes>
-          <Route path="/Register" element={
+
+        <Route path="Intro" element={
+            <Intro/>
+          } />
+
+
+          <Route path="Register" element={
             <Register/>
           } />
-          <Route path="/SignIn" element={
+          <Route path="SignIn" element={
             <SignIn/>
             } />
-             <Route path="/Survey" element={
+             <Route path="Survey" element={
             <Survey/>
             } />
-        </Routes>
-              </div>
-
+              <Route path="Cart" element={
+            <Cart/>
+            } />
+          </Routes>
+              </div> 
+           
             <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
@@ -151,11 +212,11 @@ const Navbar = () => {
          
         </Right>
           
-          
       </Wrapper>
-      
+    
     </Container>
   )
 }
 
 export default Navbar
+

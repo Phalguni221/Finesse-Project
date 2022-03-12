@@ -12,9 +12,9 @@ const Container2 = styled.div `
 
 //Parent-wrapper for navbar 
 const Wrapper2 = styled.div `
-  padding: 200px 20px;
+  padding: 150px 20px;
   justify-content: space-between;
-  margin-right:80px;
+  margin-right:100px;
 `;
 
 export default function Intro () {
@@ -24,8 +24,12 @@ export default function Intro () {
     <title>Welcome to Finesse!</title>
     <h1>
         Browse and shop for the latest fashion trends! Whether it is to impress yourself or others, you can be sure that we have it all!
-        Select from a wide variety of accessories and find the one that matches your style! You can even take one of our surveys to
-         get recommendations tailored to your unqiue preferences and personality!
+        <br></br>
+        <br></br>
+        Select from a wide variety of accessories and find the one that matches your style! 
+        <br></br>
+        <br></br>
+        You can even take one of our surveys to get recommendations tailored to your unqiue preferences and personality!
     </h1>
     </Wrapper2>
     </Container2>

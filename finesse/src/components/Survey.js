@@ -15,7 +15,7 @@ const Container2 = styled.div `
 
 //Parent-wrapper for nav 
 const Wrapper2 = styled.div `
-  padding: 200px 10px;
+  padding: 100px 10px;
   justify-content:"stylece-between;
   margin-right:80px;
 `;

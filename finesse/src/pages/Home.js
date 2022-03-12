@@ -7,17 +7,57 @@ import Slider from '../components/Slider';
 import Categories from '../components/Categories';
 import Products from '../components/Products';
 import Footer from '../components/Footer';
+import styled from 'styled-components';
+
 
 export default function Home () {
     return (
-    
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
-            <Slider/>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+        <p><Slider/></p>
+            <br></br>
+            <br></br>
             <Categories/>
             <Products/>
+            <Footer/>
         </BrowserRouter>
+     
       )
 }
 

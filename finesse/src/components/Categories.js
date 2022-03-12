@@ -1,21 +1,22 @@
 import styled from "styled-components";
-import { categories } from "../../../../Finesse-Project-Sweta Changes/finesse/src/data";
-import CategoryItem from "../../../../Finesse-Project-Sweta Changes/finesse/src/components/CategoryItem";
+import { categories } from "../data";
+import CategoryItem from "./CategoryItem";
 
 
-const Container = styled.div`
+const Container3 = styled.div`
     display: flex;
-    padding: 20px;
+    padding: 30px;
     justify-content: space-between;
+    position:relative;
 `;
 
 const Categories = () => {
     return (
-        <Container>
+        <Container3>
         {categories.map((item) => (
             <CategoryItem item={item} key={item.id} />
           ))} 
-        </Container>
+        </Container3>
     );
 };
 

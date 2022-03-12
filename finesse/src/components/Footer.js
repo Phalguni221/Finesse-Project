@@ -12,11 +12,11 @@ const Container = styled.div`
 export default function Footer () {
     return(
       <Container>
-           <p>
+      <p>
      <text><strong>Want to learn more about Finesse? Contact us at:</strong></text>
        <text><strong>Email:Finesse@gmail.com </strong></text>
        <text><strong>Phone number: 732-567-9087</strong></text> 
-    </p>
+       </p>
      </Container>
     )
 }

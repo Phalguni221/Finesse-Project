@@ -4,7 +4,7 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import SignIn from './SignIn.js'
-import Results from './Results'
+
 
 const Container2 = styled.div `
  height:0.01px;

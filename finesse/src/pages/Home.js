@@ -1,8 +1,12 @@
 
+
+
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { BrowserRouter } from 'react-router-dom'
 import Announcement from '../components/Announcement';
+
 import Slider from '../components/Slider';
 import Categories from '../components/Categories';
 import Products from '../components/Products';
@@ -12,10 +16,15 @@ import Intro from '../components/Intro'
 import Newsletter from '../components/Newsletter';
 import Cart from '../components/Cart';
 
+import Footer from '../components/Footer'
+
+
+
 
 
 export default function Home () {
     return (
+
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
@@ -76,5 +85,18 @@ export default function Home () {
 
       
      
+
+       <BrowserRouter>
+            <Announcement/>
+             <Navbar/>
+            
+             <Footer/>
+        </BrowserRouter>
+      
+    )
+}
+
+export default Home;
+
 
 

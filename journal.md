@@ -50,6 +50,15 @@
 32. Created arrows for slider -Sweta
 33. Created horizontal Slider and added 3 pages with pics and buttons - Sweta
 
-3/10/22 (Thurs)
-34. 
+3/10/22 (THR)
+34. Created issues for basic funtionality in github -Sweta
+35. Created Categories for Clothing with Buttons and Titles -Sweta
+36. Created Sub Categories for shopping -Sweta
+
+3/11/22 (Fri)
+37.
+
+3/12/22 (Sat)
+38.
+
 

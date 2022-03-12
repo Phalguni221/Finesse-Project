@@ -9,6 +9,8 @@ import Products from '../components/Products';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
 import Intro from '../components/Intro'
+import Newsletter from '../components/Newsletter';
+import Cart from '../components/Cart';
 
 
 
@@ -17,6 +19,7 @@ export default function Home () {
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
+
             <br></br>
             <br></br>
             <br></br>
@@ -44,6 +47,13 @@ export default function Home () {
             <br></br>
             <br></br>
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Cart/>
             <br></br>
             <br></br>
             <br></br>
@@ -54,8 +64,10 @@ export default function Home () {
         <p><Slider/></p>
             <br></br>
             <br></br>
+
             <Categories/>
             <Products/>
+            <Newsletter/>
             <Footer/>
         </BrowserRouter>
      

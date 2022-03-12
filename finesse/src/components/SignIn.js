@@ -37,6 +37,7 @@ const Right = styled.div`
  flex: flex-wrap
  `; 
 
+
 export default function SignIn () {
   return (
   <div>
@@ -47,7 +48,30 @@ export default function SignIn () {
       If you aren't a member but want to become one, please go to the sign-in page to become a new member of Finesse!</h2>
       <br></br>
       <br></br>
-      <Right>
+      <Buttons>
+      <div>
+      <form action="#" method="POST">
+                    <label for="username">UserName<span class="required-field">*</span></label>
+                    <input type="text"  minlength="2" maxlength="35" id="username" name="username" placeholder="username" required />
+            </form>
+                </div>
+        
+        </Buttons>
+        <br></br>
+        <br></br>
+        <Buttons>
+                <br></br>
+                 <div>
+                 <form action="#" method="POST">
+                <label for="Password">Password<span class="required-field">*</span></label>
+                    <input type="text"  minlength="2" maxlength="35" id="lastname" name="lastname" placeholder="lastname" required />
+                    </form>
+                 </div>
+            </Buttons>
+       
+          <br></br>
+          <br></br>
+            <Right>
       <Buttons>
         <form method="GET" action="Survey">
     <input type="Submit" name="Survey" id="Survey" value="Survey"/>

@@ -8,6 +8,14 @@ import {useState} from 'react'
 import SignIn from './SignIn'
 import Register from './Register'
 import Survey from './Survey'
+import Slider from './Slider'
+import Intro from './Intro'
+import Cart from './Cart'
+import Dress from './Dress'
+
+
+
+
 
 
 //React styled component in use
@@ -18,7 +26,7 @@ const Container = styled.div `
 
 //Parent-wrapper for nav 
 const Wrapper = styled.div `
-  padding: 10px 20px;
+  padding: 10px 50px;
   display:flex;
   align-items: center;
   margin-left:100px
@@ -83,15 +91,16 @@ const Logo = styled.h1`
 flex: 1;
 display: flex;
 aline-item: center;
-  font-weight: bold;
+font-weight: bold;
 `;
 
 //For Right side things
 const Right = styled.div`
   flex: 1;
   display: flex;
-  // aline-item: center;
+  aline-item: center;
   justify-content: flex-end;
+  margin-right:500px;
   `;
 
 //For Audio
@@ -108,9 +117,9 @@ margin-right:300px;
  `; 
 
 
+
 const Navbar = () => {
   return (
-  
     <Container>
       <Wrapper>
           <Left>
@@ -133,40 +142,73 @@ const Navbar = () => {
               FINESSE
             </Logo>     
           </Center>
-          <br></br>
-          <br></br>
+          <hr></hr>
        
           <Right>
+            <MenuItem>
+
+            <form method="GET" action="Intro">
+
+            <form method="GET" action="Slider">
+
+              <input type="Submit" name="Home" id="Home" value="Home"/>
+            </form>
+            </MenuItem>
+              <MenuItem> 
+              <form method="GET" action="Register">
+             <input type="Submit" name="Register" id="Register" value="Register"/>
+             </form> 
+             </MenuItem>
+
                 <MenuItem>
-                <Link to="/">Home</Link>
+                <form method="GET" action="SignIn">
+             <input type="Submit" name="SignIn" id="SignIn" value="SignIn"/>
+             </form> 
                 </MenuItem>
 
                 <MenuItem>
-                <Link to="/Register"> Register</Link>
+                <form method="GET" action="Survey">
+             <input type="Submit" name="Survey" id="Survey" value="Survey"/>
+             </form> 
                 </MenuItem>
-
                 <MenuItem>
-                <Link to="/SignIn">Sign-in</Link>
+                <form method="GET" action="Cart">
+             <input type="Submit" name="Cart" id="Cart" value="Cart"/>
+             </form> 
                 </MenuItem>
-
                 <MenuItem>
-                <Link to="/Survey">Survey</Link>
+                <form method="GET" action="Dress">
+             <input type="Submit" name="Dress" id="Dress" value="Dress"/>
+             </form> 
                 </MenuItem>
+       
 
               <div className="display">
         <Routes>
-          <Route path="/Register" element={
+
+        <Route path="Intro" element={
+            <Intro/>
+          } />
+
+
+          <Route path="Register" element={
             <Register/>
           } />
-          <Route path="/SignIn" element={
+          <Route path="SignIn" element={
             <SignIn/>
             } />
-             <Route path="/Survey" element={
+             <Route path="Survey" element={
             <Survey/>
             } />
+              <Route path="Cart" element={
+            <Cart/>
+            } />
+            <Route path="Dress" element={
+              <Dress/>
+            }/>
         </Routes>
-              </div>
-
+              </div> 
+           
             <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
@@ -175,11 +217,11 @@ const Navbar = () => {
          
         </Right>
           
-          
       </Wrapper>
-      
+    
     </Container>
   )
 }
 
 export default Navbar
+

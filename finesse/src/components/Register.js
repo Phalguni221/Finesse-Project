@@ -4,20 +4,28 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import SignIn from './SignIn.js'
+import { sideItems } from "../data";
+
 
 const Container2 = styled.div `
  height:0.01px;
-  width:600px;
+  width:700px;
   background-color: beige;
-
 `;
 
-//Parent-wrapper for nav 
+//Parent-wrapper for navbar 
 const Wrapper2 = styled.div `
-  padding: 200px 100px;
+  padding: 100px 100px;
   justify-content: space-between;
   margin-right:80px;
 `;
+
+const SidePic = styled.div`
+padding: 100px 10px;
+  justify-content: space-between;
+margin-right:600px;
+`;
+
 
 export default function Register() {
   return (
@@ -25,7 +33,8 @@ export default function Register() {
       <Container2>
         <Wrapper2>
         <h1>New Member Registration Form</h1>
-    <h2>If you want to become a new member of Finesse, please fill out and submit the questionnaire below!</h2>
+    <h2>If you want to become a new member of Finesse, please fill out and submit the questionnaire below!</h2> 
+   
     <br></br>
     <br></br>
                 <form method ="GET" action="SignIn">

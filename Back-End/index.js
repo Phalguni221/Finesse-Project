@@ -16,3 +16,8 @@ app.use(methodOverride('_method'))
 app.get('/', (req, res) => {
     res.render('Home')
   })
+
+
+  app.get('/Home/Dress', (req, res) => {
+    res.render('Dress')
+  })

@@ -1,32 +1,29 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import styled from "styled-components";
 import { useState } from "react";
-import { sliderItems } from "../data";
+import { sliderItems } from "../data"; 
 
 
-// Container
+
+
+
 const Container = styled.div`
-    width: 70%;
-    height: 100vh;
     display: flex;
-    position: relative;
-    overflow: hidden;
-    background-color: biege;
-    position: relative;
-    margin-right:50px
+    padding: 0px;
+    justify-content: space-between;
+    
 `;
-
 
 // For Arrow style
 const Arrow = styled.div`
-    width: 50px;
-    height: 50px;
-    background-color: #fff7f7;
+    width: 100px;
+    height:50px;
+    background-color: hotpink;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     left: ${(props) => props.direction === "left" && "10px"};
@@ -35,7 +32,9 @@ const Arrow = styled.div`
     cursor: pointer;
     opacity: 0.5;
     z-index: 2;
+    padding:
 `;
+
 
 
 // Wrapper for Images
@@ -57,19 +56,20 @@ const Slide = styled.div`
 
 //For Image Container
 const ImgContainer = styled.div`
-  height: 85%;
+  height: 90%;
   flex: 1;
 `;
 
 
 const Image = styled.img`
-  height: 95%;
+  height: 80%;
+  
 `;
 
 //For Info Container
 const InfoContainer = styled.div`
-  // flex: 1;
-  padding: 50px;
+  flex: 1;
+  padding: 20px;
 `;
 
 //For Title
@@ -79,7 +79,7 @@ const Title = styled.h1`
 
 //For Discription
 const Desc = styled.p`
-  margin: 50px 0px;
+  margin: 50px 30px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -92,8 +92,15 @@ const Button = styled.button`
   font-size: 20px;
   background-color: crimson;
   cursor: pointer;
-`;
+  `;
 
+
+
+const CategoryContainer = styled.div`
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+`;
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -107,8 +114,12 @@ const Slider = () => {
 
   return (
     <div>
-    <Container>
+
+    
       
+
+      <Container>
+
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
@@ -121,7 +132,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              
             </InfoContainer>
           </Slide>
         ))}
@@ -129,8 +140,9 @@ const Slider = () => {
       <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>
-    </Container>
-    </div>
+      </Container>
+     
+      </div>
   );
 };
 

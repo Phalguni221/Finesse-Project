@@ -24,47 +24,9 @@ export default function Home () {
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-        <p><Slider/></p>
-        <Categories/>
-        <Products/>
-            <br></br>
-            <br></br>
+            <Slider/>
+            <Categories/>
+            <Products/>
             <Newsletter/>
             <Footer/>
         </BrowserRouter>

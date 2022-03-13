@@ -14,25 +14,24 @@ const Container = styled.div`
     
 `;
 
-// For Arrow style
+//For Arrow styling
 const Arrow = styled.div`
-    width: 100px;
-    height:50px;
-    background-color: hotpink;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: ${(props) => props.direction === "left" && "10px"};
-    right: ${(props) => props.direction === "right" && "10px"};;
-    margin: auto;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 2;
-    padding:
+  width: 50px;
+  height: 50px;
+  background-color: #fff7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: ${(props) => props.direction === "left" && "10px"};
+  right: ${(props) => props.direction === "right" && "10px"};
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 2;
 `;
 
 
@@ -90,7 +89,7 @@ const Desc = styled.p`
 const Button = styled.button`
   padding: 10px;
   font-size: 20px;
-  background-color: crimson;
+  background-color: orange;
   cursor: pointer;
   `;
 
@@ -113,13 +112,7 @@ const Slider = () => {
   };
 
   return (
-    <div>
-
-    
-      
-
-      <Container>
-
+    <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
@@ -132,7 +125,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              
+              <Button>SHOW NOW</Button>
             </InfoContainer>
           </Slide>
         ))}
@@ -140,10 +133,9 @@ const Slider = () => {
       <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>
-      </Container>
-     
-      </div>
+    </Container>
   );
 };
+
 
 export default Slider;

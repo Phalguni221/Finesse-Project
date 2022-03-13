@@ -98,7 +98,7 @@ export const sliderItems = [
   },
 ];
 
-export const jackets = [
+export const dress = [
   {
     id: 1,
     img: "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",

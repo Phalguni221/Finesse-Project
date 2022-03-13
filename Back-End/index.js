@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
   })
 
 
-  app.get('/Home/Jacket', (req, res) => {
-    res.render('Jacket')
+  app.get('/Home/Dress', (req, res) => {
+    res.render('Dress')
   })

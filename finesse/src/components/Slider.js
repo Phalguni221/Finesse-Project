@@ -95,11 +95,11 @@ const Button = styled.button`
 
 
 
-const CategoryContainer = styled.div`
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-`;
+// const CategoryContainer = styled.div`
+//     display: flex;
+//     padding: 30px;
+//     justify-content: space-between;
+// `;
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

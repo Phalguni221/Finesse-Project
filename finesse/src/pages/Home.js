@@ -25,10 +25,6 @@ export default function Home () {
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
-            <Slider/>
-            <Categories/>
-            <Products/>
-
             <br></br>
             <br></br>
             <br></br>
@@ -58,11 +54,6 @@ export default function Home () {
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            {/* <Cart/> */}
             <br></br>
             <br></br>
             <br></br>
@@ -71,11 +62,10 @@ export default function Home () {
             <br></br>
             <br></br>
         <p><Slider/></p>
+        <Categories/>
+        <Products/>
             <br></br>
             <br></br>
-
-            <Categories/>
-            <Products/>
             <Newsletter/>
             <Footer/>
         </BrowserRouter>

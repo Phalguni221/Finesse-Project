@@ -1,7 +1,10 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import styled from "styled-components";
 import { useState } from "react";
-import { sliderItems } from "../data";
+import { sliderItems } from "../data"; 
+
+
+
 
 
 const Container = styled.div`
@@ -111,7 +114,12 @@ const Slider = () => {
 
   return (
     <div>
+
+    
+      
+
       <Container>
+
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>

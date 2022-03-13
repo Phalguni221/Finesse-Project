@@ -22,6 +22,14 @@ import SideItem from '../components/SideItem'
 export default function Home () {
     return (
 
+    
+        
+       
+    
+    
+         
+
+
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
@@ -73,6 +81,7 @@ export default function Home () {
         <p><Slider/></p>
             <br></br>
             <br></br>
+
 
             <Categories/>
             <Products/>

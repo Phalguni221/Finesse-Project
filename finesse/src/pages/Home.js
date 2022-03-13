@@ -11,6 +11,7 @@ import styled from 'styled-components';
 import Intro from '../components/Intro'
 import Newsletter from '../components/Newsletter';
 import Cart from '../components/Cart';
+import SideItem from '../components/SideItem'
 
 
 
@@ -19,7 +20,7 @@ export default function Home () {
         <BrowserRouter>
             <Announcement/>
             <Navbar/>
-
+      
             <br></br>
             <br></br>
             <br></br>

@@ -4,6 +4,7 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import SignIn from './SignIn.js'
+import { sideItems } from "../data";
 
 
 const Container2 = styled.div `
@@ -19,16 +20,24 @@ const Wrapper2 = styled.div `
   margin-right:80px;
 `;
 
+const SidePic = styled.div`
+padding: 100px 10px;
+  justify-content: space-between;
+margin-right:600px;
+`;
+
+
 export default function Register() {
   return (
     <div>
       <Container2>
         <Wrapper2>
         <h1>New Member Registration Form</h1>
-    <h2>If you want to become a new member of Finesse, please fill out and submit the questionnaire below!</h2>
+    <h2>If you want to become a new member of Finesse, please fill out and submit the questionnaire below!</h2> 
+   
     <br></br>
     <br></br>
-                <form method ="GET" action="Results">
+                <form method ="GET" action="SignIn">
                   <div>
                     <label for="firstname">Your First Name<span class="required-field">*</span></label>
                     <input type="text" minlength="2" maxlength="35" id="firstname" name="firstname" placeholder="firstname" required />

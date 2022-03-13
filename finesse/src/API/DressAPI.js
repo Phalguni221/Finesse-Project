@@ -77,3 +77,20 @@
 //   };
 //     return DressThunk;
 // };
+
+// import {API_key} from './Api/createApi'
+
+// on your node server
+// const serverApi = createApi({
+//   accessKey: 'API_key',
+//   //...other fetch options
+// });
+
+
+// async function fetchDress() {
+//     let fetchDress = await fetch("https://unsplash.com/s/photos/dress", {
+//         method:"GET"
+//     })
+//     console.log(fetchDress)
+// }
+

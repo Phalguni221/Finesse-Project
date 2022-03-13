@@ -1,11 +1,12 @@
 import { Add, Remove, ShoppingCartOutlined } from "@material-ui/icons";
-import styled from "styled-components";
+import styled from "styled-components"
 
-
-
-
-
-const Container = styled.div``;
+const Container = styled.div`
+height:0.01px;
+width:700px;
+background-color: beige;
+margin-right:50px
+`;
 
 const Wrapper = styled.div`
   padding: 20px;
@@ -16,6 +17,7 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   font-weight: 300;
   text-align: center;
+  margin-top:60px;
 `;
 
 const Top = styled.div`

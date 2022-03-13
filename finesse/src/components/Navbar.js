@@ -15,9 +15,6 @@ import Cart from './Cart'
 
 
 
-
-
-
 //React styled component in use
 const Container = styled.div `
   height: 70px;

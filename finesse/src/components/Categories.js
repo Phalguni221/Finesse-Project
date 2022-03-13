@@ -5,6 +5,7 @@ import CategoryItem from "./CategoryItem";
 const Container3 = styled.div`
     display: flex;
     padding: 30px;
+    text-align:center;
     justify-content: space-between;
     position:relative;
 `;

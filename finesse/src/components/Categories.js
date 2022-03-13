@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { categories } from "../data";
 import CategoryItem from "./CategoryItem";
 
-
 const Container3 = styled.div`
     display: flex;
     padding: 30px;
@@ -21,3 +20,4 @@ const Categories = () => {
 };
 
 export default Categories;
+

@@ -15,6 +15,9 @@ import Dress from './Dress'
 
 
 
+
+
+
 //React styled component in use
 const Container = styled.div `
   height: 70px;
@@ -143,7 +146,11 @@ const Navbar = () => {
        
           <Right>
             <MenuItem>
+
             <form method="GET" action="Intro">
+
+            <form method="GET" action="Slider">
+
               <input type="Submit" name="Home" id="Home" value="Home"/>
             </form>
             </MenuItem>
@@ -178,9 +185,12 @@ const Navbar = () => {
 
               <div className="display">
         <Routes>
+
         <Route path="Intro" element={
             <Intro/>
           } />
+
+
           <Route path="Register" element={
             <Register/>
           } />
@@ -214,3 +224,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

@@ -8,6 +8,7 @@ const Container = styled.div`
   margin: 3px;
   height: 70vh;
   position: relative;
+  justify-content: center;
 `;
 
 //For Image 
@@ -36,7 +37,9 @@ const Info = styled.div`
 const Title = styled.h1`
     color:white;
     margin-bottom: 20px;
+    margin-left:180px;
     display: flex
+    text-align: center;
 `;
 
 
@@ -58,6 +61,7 @@ const CategoryItem = ({item}) => {
             <Image src={item.img}/>
                 <Info>
                     <Title>{item.title}</Title>
+                    <br></br>
                     <Button>SHOP NOW</Button>
                 </Info>
         </Container>

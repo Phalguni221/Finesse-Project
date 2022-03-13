@@ -1,23 +1,15 @@
-import { createApi } from 'unsplash-js'
+import {API_key} from './Api/createApi'
 
 // on your node server
 const serverApi = createApi({
-  accessKey: 'API_Key',
+  accessKey: 'API_key',
   //...other fetch options
 });
 
 
-export default function Dress () {
-    return (
-        <Container>
-        {Dress.map((item) => (
-            <DressAPI item={item} key={item.id} />
-          ))} 
-        </Container>
-    );
-};
-async function getDress() {
+async function FetchDress() {
     let fetchDress = await fetch("https://unsplash.com/s/photos/dress")
     console.log(fetchDress)
 }
+
 

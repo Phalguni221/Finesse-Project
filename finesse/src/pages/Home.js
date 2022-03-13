@@ -11,11 +11,21 @@ const Home = () => {
     return (
     
         <BrowserRouter>
-        
-            <Announcement/>  
+        <Announcement/> 
+            <Navbar/>
+            
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Slider/>
 
-
-        <Slider/>
+       
     
     
          

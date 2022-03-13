@@ -21,7 +21,6 @@ import SideItem from '../components/SideItem'
 
 export default function Home () {
     return (
-
         <BrowserRouter>
             <Announcement/>
             <Navbar/>

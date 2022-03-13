@@ -9,7 +9,7 @@ import { sliderItems } from "../data";
 
 const Container = styled.div`
     display: flex;
-    // margin-right:170px;
+    margin-right:170px;
     justify-content: space-between;    
 `;
 
@@ -88,11 +88,15 @@ const Desc = styled.p`
 
 
 //For Buttons
-const Button = styled.button`
+const Button = styled.div`
   padding: 10px;
-  font-size: 20px;
-  background-color: crimson;
+  width:20;
+  font-size: 15px;
+  // background-color:white;
   cursor: pointer;
+  margin-left:20px;
+  // margin-top:300px;
+  margin-right:200px;
   `;
 
 
@@ -117,9 +121,6 @@ const Slider = () => {
   return (
     <div>
 
-    
-      
-
       <Container>
 
       <Arrow direction="left" onClick={() => handleClick("left")}>
@@ -134,8 +135,13 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              
+              <Button>
+              <form method="GET" action="Dress">
+             <text><input type="Submit" name="Shop Now!" id="Shop Now!" value="Shop Now!"/></text>
+             </form> 
+              </Button>
             </InfoContainer>
+            
           </Slide>
         ))}
       </Wrapper>

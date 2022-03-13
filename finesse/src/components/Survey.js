@@ -27,7 +27,7 @@ export default function Survey () {
     <Wrapper2>
     <h1>Take this Survey to get recommended clothes to your style and suiting!</h1>
     <br></br>
-    <form method="GET" action="Jackets">
+    <form method="GET" action="Dress">
     <div>
                     <label for="color">What is your favorite color?</label>
                     <input type="text" minlength="3" maxlength="22" id="firstname" name="colorname" placeholder="colorname" required />

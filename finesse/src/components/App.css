@@ -33,10 +33,20 @@ text {
     color:hotpink;
     font-size:20px;
     padding:2px;
+    text-align:center;
 }
 
 input {
-    background-color: black;
-    color:pink;
+    background-color:black; 
+    color:hotpink;
+    font-size:18px;
+    padding:2px;
+    text-align:center;
 }
 
+input1 {
+    color:hotpink;
+    font-size:18px;
+    padding:2px;
+    text-align:center;
+}

@@ -1,5 +1,6 @@
 import { Add, Remove, ShoppingCartOutlined } from "@material-ui/icons";
 import styled from "styled-components"
+import Checkout from './Checkout'
 
 const Container = styled.div`
 height:0.01px;
@@ -150,8 +151,8 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color:black;
+  // color: white;
   font-weight: 600;
 `;
 
@@ -241,7 +242,11 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>$ 80</SummaryItemPrice>
             </SummaryItem>
-            <Button>CHECKOUT NOW</Button>
+            <Button>
+            <form method="GET" action="Checkout">
+    <input type="Submit" name="Checkout" id="Checkout" value="Checkout"/>
+    </form>
+            </Button>
           </Summary>
         </Bottom>
       </Wrapper>

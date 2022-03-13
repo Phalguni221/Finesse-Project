@@ -1,4 +1,15 @@
 import { createApi } from 'unsplash-js';
+import styled from "styled-components";
+import { dress } from "../data";
+import CategoryItem from "./CategoryItem";
+
+
+const Container = styled.div`
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    position:relative;
+`;
 
 // on your node server
 const serverApi = createApi({
@@ -34,3 +45,13 @@ fetch('https://unsplash.com/s/photos/dres/s', {
 .then(data => console.log(data))
 
 })
+
+export default function Dress () {
+    return (
+        <Container>
+        {dress.map((item) => (
+            <DressAPI item={item} key={item.id} />
+          ))} 
+        </Container>
+    );
+};

@@ -11,9 +11,7 @@ import Survey from './Survey'
 import Slider from './Slider'
 import Intro from './Intro'
 import Cart from './Cart'
-
-
-
+import Dress from './Dress'
 
 
 
@@ -171,7 +169,11 @@ const Navbar = () => {
              <input type="Submit" name="Cart" id="Cart" value="Cart"/>
              </form> 
                 </MenuItem>
-           
+                <MenuItem>
+                <form method="GET" action="Dress">
+             <input type="Submit" name="Dress" id="Dress" value="Dress"/>
+             </form> 
+                </MenuItem>
        
 
               <div className="display">
@@ -191,7 +193,10 @@ const Navbar = () => {
               <Route path="Cart" element={
             <Cart/>
             } />
-          </Routes>
+            <Route path="Dress" element={
+              <Dress/>
+            }/>
+        </Routes>
               </div> 
            
             <MenuItem>

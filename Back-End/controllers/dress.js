@@ -1,13 +1,13 @@
-const router = require('express').Router()
+const dress = require('express').Router()
 const db = require('../models')
 
 
-router.get('/:id', (req, res) => {
-  db.shoppingcart.findById(req.params.id)
+dress.get('/dress/:id', (req, res) => {
+  db.dress.findById(req.params.id)
   .populate('comments')
   .then(place => {
       console.log(place.comments)
-      res.render('/shoppingcart', { shoppingcart })
+      res.render('/dress', { dress })
   })
   .catch(err => {
       console.log('err', err)
@@ -15,10 +15,10 @@ router.get('/:id', (req, res) => {
   })
 })
 
-router.put('/:id', (req, res) => {
-  db.shoppingcart.findByIdAndUpdate(req.params.id, req.body)
+dress.put('/dress/:id', (req, res) => {
+  db.dress.findByIdAndUpdate(req.params.id, req.body)
   .then(() => {
-      res.redirect(`/shoppingcart/${req.params.id}`)
+      res.redirect(`/dress/${req.params.id}`)
   })
   .catch(err => {
       console.log('err', err)
@@ -26,26 +26,26 @@ router.put('/:id', (req, res) => {
   })
 })
 
-router.delete('/shoppingcart/:id', (req, res) => {
+dress.delete('/dress/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
   }
-  else if (!shoppingcart[id]) {
+  else if (!dress[id]) {
     res.render('error404')
   }
   else {
-   shoppingcart.splice(id, 1)
-    res.redirect('/shoppingcart')
+   dress.splice(id, 1)
+    res.redirect('/dress')
   }
 })
 
-router.get('/:id/edit', (req, res) => {
-  db.shoppingcart.findById(req.params.id)
+dress.get('/:id/edit', (req, res) => {
+  db.dress.findById(req.params.id)
   .populate('comments')
   .then(place => {
       console.log(place.comments)
-      res.render('/shoppingcart', { shoppingcart })
+      res.render('/dress', { dress })
   })
   .catch(err => {
       console.log('err', err)

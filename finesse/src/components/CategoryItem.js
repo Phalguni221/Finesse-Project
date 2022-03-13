@@ -1,3 +1,4 @@
+
 import styled from "styled-components"
 
 
@@ -62,5 +63,6 @@ const CategoryItem = ({item}) => {
         </Container>
     );
 };
+
 
 export default CategoryItem;

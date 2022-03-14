@@ -5,7 +5,6 @@
 // 000API_key}
 //   //...other fetch options
 // });
-y
 
 async function FetchDress() {
     let fetchDress = await fetch("https://unsplash.com/s/photos/dress")

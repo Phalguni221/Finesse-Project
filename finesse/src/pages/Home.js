@@ -10,7 +10,7 @@ import Products from '../components/Products';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
 import Newsletter from '../components/Newsletter';
-import Cart from '../components/Cart';
+// import Cart from '../components/Cart';
 
 
 

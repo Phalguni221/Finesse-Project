@@ -15,26 +15,6 @@ const Container = styled.div`
 
 //For Arrow styling
 const Arrow = styled.div`
-<<<<<<< HEAD
-    width: 50px;
-    height: 50px;
-    background-color: hotpink;
-    border-radius: 50%;
-    display: flex-wrap;
-    flex:1;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: ${(props) => props.direction === "left" && "10px"};
-    right: ${(props) => props.direction === "right" && "25px"};;
-    margin: auto;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 2;
-    padding:10px
-=======
   width: 50px;
   height: 50px;
   background-color: #fff7f7;
@@ -51,7 +31,6 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
->>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791
 `;
 
 
@@ -109,14 +88,8 @@ const Desc = styled.p`
 //For Buttons
 const Button = styled.div`
   padding: 10px;
-<<<<<<< HEAD
-  width:20;
-  font-size: 15px;
-  // background-color:white;
-=======
   font-size: 20px;
   background-color: orange;
->>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791
   cursor: pointer;
   margin-left:20px;
   // margin-top:300px;
@@ -143,14 +116,7 @@ const Slider = () => {
     }
   };
   return (
-<<<<<<< HEAD
-    <div>
-
-      <Container>
-
-=======
     <Container>
->>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
@@ -163,15 +129,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-<<<<<<< HEAD
-              <Button>
-              <form method="GET" action="Dress">
-             <text><input type="Submit" name="Shop Now!" id="Shop Now!" value="Shop Now!"/></text>
-             </form> 
-              </Button>
-=======
-              <Button>SHOW NOW</Button>
->>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791
+              <Button>SHOP NOW</Button>
             </InfoContainer>
             
           </Slide>

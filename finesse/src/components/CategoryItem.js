@@ -37,7 +37,7 @@ const Info = styled.div`
 const Title = styled.h1`
     color:white;
     margin-bottom: 10px;
-    margin-left:190px;
+    margin-left:100px;
     display: flex
     text-align: center;
 `;
@@ -47,11 +47,12 @@ const Title = styled.h1`
 const Button = styled.button`
     border:none;
     padding: 15px;
-    background-color: white;
-    color:black;
+    font-size: 20px;
+    background-color: orange;
     cursor: pointer;
     font-weight: 600;
 `;
+
 
 
 
@@ -64,9 +65,7 @@ const CategoryItem = ({item}) => {
                     <br></br>
                     {/* <Button>SHOP NOW</Button> */}
                     <Button>
-              <form method="GET" action="Dress">
-             <text><input type="Submit" name="Shop Now!" id="Shop Now!" value="Shop Now!"/></text>
-             </form> 
+              SHOP NOW!
               </Button>
                 </Info>
         </Container>

@@ -12,8 +12,8 @@ const Container = styled.div`
 
 //For Arrow styling
 const Arrow = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: hotpink;
   border-radius: 50%;
   display: flex;
@@ -24,7 +24,9 @@ const Arrow = styled.div`
   bottom: 0;
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
-  margin: auto;
+  margin-top:870px;
+  margin-right: 700px;
+  margin-left:900px;
   cursor: pointer;
   opacity: 1;
   z-index: 2;
@@ -68,9 +70,10 @@ const InfoContainer = styled.div`
 
 //For Title
 const Title = styled.h1`
-margin:20px;
+  margin:20px;
   font-size: 60px;
   display:flex;
+  color:blue;
 `;
 
 //For Discription
@@ -94,43 +97,24 @@ const Button = styled.div`
   `;
 
 
-
-// const CategoryContainer = styled.div`
-//     display: flex;
-//     padding: 30px;
-//     justify-content: space-between;
-// `;
-
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
-    // if (direction === "left") {
-    //   setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
-    // }
-
-        
-    if (direction === "left") {
-      setSlideIndex(slideIndex < 0 ? slideIndex - 1 : 1);
-    }
-
-  
-    // else {
-    //   setSlideIndex(slideIndex > 0 ? slideIndex + 1 : 1);
-    // }
     
     if (direction === "right") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
     }
 
     else {
-      setSlideIndex(slideIndex < 0 ? slideIndex + 1 : 1);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
     }
   };
+
   return (
     <Container>
-      <Arrow direction="left" onClick={() => handleClick("left")}>
+      {/* <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
-      </Arrow>
+      </Arrow> */}
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
@@ -146,6 +130,9 @@ const Slider = () => {
           </Slide>
         ))}
       </Wrapper>
+      <Arrow direction="left" onClick={() => handleClick("left")}>
+        <ArrowLeftOutlined />
+      </Arrow>
       <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlined />
       </Arrow>

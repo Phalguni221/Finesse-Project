@@ -1,221 +1,123 @@
 import { Badge } from "@material-ui/core";
-import { Search, ShoppingCartOutlined } from '@material-ui/icons';
-import React from 'react'
-import styled from 'styled-components'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import {useState} from 'react'
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import React from "react";
+import styled from "styled-components";
 
-import SignIn from './SignIn'
-import Register from './Register'
-import Survey from './Survey'
-import Slider from './Slider'
-import Intro from './Intro'
-import Cart from './Cart'
-// import Dress from './Dress'
 
+<<<<<<< HEAD
 
 
 //React styled component in use
 const Container = styled.div `
   height: 70px;
+=======
+//For styled main container
+const Container = styled.div`
+  height: 60px;
+>>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791
   background-color: pink;
 `;
 
-//Parent-wrapper for nav 
-const Wrapper = styled.div `
-  padding: 10px 50px;
-  display:flex;
-  align-items: center;
-  margin-left:100px
-  justify-content: space-between;
-`;
-
-
-// For Arrow style
-const Arrow = styled.div`
-    width: 50px;
-    height: 50px;
-    background-color: pink;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: ${(props) => props.direction === "left" && "10px"};
-    right: ${(props) => props.direction === "right" && "10px"};;
-    margin: auto;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 2;
-`;
-
-//for EN lang
-const Language = styled.span`
-  font-size: 14px;
-  cursor: pointer;
-  `;
-
-//for searchbar
-const SearchContainer = styled.div`
-  border: none;
+//parent wrapper for nav
+const Wrapper = styled.div`
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  margin-left: 25px;
-  padding: 1px
+  justify-content: space-between;
+  
 `;
 
-//for searchbar input
-const Input = styled.input`
-  border: 0.5px solid purple;
-`;
-
-//for LCR proper divider
+//For left side of navbar
 const Left = styled.div`
   flex: 1;
   display: flex;
-  aline-item: center;
-  `;
+  align-items: center;
+`;
 
+//For lang
+const Language = styled.span`
+  font-size: 14px;
+  cursor: pointer;
+  
+`;
+
+
+//For search container
+const SearchContainer = styled.div`
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+`;
+
+
+
+const Input = styled.input`
+  border: none;
+  
+`;
+
+
+//For center navbar
 const Center = styled.div`
   flex: 1;
   text-align: center;
-  `;
-
-//logo/name
-const Logo = styled.h1`
-flex: 1;
-display: flex;
-aline-item: center;
-font-weight: bold;
 `;
 
-//For Right side things
+
+//For finesse name
+const Logo = styled.h1`
+  font-weight: bold;
+  
+`;
+
+//For right side of navbar
 const Right = styled.div`
   flex: 1;
   display: flex;
-  aline-item: center;
+  align-items: center;
   justify-content: flex-end;
-  margin-right:500px;
-  `;
-
-//For Audio
-const Video = styled.div`
-text-align:center;
-margin-right:300px;
+  
 `;
 
- //for menuitems, cart and all
- const MenuItem = styled.div`
- font-size: 17px;
- cursor: pointer;
- margin-right: 35px;
- `; 
-
-
+//for menuitem
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+  }
+`;
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-          <Left>
-            <Language>EN</Language>
-            <SearchContainer>
-              <Input/>
-              <Search style={{ color: "purple", fontSize: 16 }}/>
-            </SearchContainer> 
-          </Left>
-        <p>
-      {/* <Video>
-        <p>Click for some background music while you shop!</p>
-      <iframe width="50" height="30" src="https://www.youtube.com/embed/FxU7XEMonbk" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-      </Video> */}
-      </p>
-          <Center>
-            <Logo>
-              FINESSE
-            </Logo>     
-          </Center>
-          <hr></hr>
-       
-          <Right>
-            <MenuItem>
-            <form method="GET" action="Intro">
-              <input type="Submit" name="Home" id="Home" value="Home"/>
-            </form>
-            </MenuItem>
-
-              <MenuItem> 
-              <form method="GET" action="Register">
-             <input type="Submit" name="Register" id="Register" value="Register"/>
-             </form> 
-             </MenuItem>
-
-                <MenuItem>
-                <form method="GET" action="SignIn">
-             <input type="Submit" name="SignIn" id="SignIn" value="SignIn"/>
-             </form> 
-                </MenuItem>
-
-                <MenuItem>
-                <form method="GET" action="Survey">
-             <input type="Submit" name="Survey" id="Survey" value="Survey"/>
-             </form> 
-                </MenuItem>
-                <MenuItem>
-                <form method="GET" action="Cart">
-             <input type="Submit" name="Cart" id="Cart" value="Cart"/>
-             </form> 
-                </MenuItem>
-                <MenuItem>
-                <form method="GET" action="Dress">
-             <input type="Submit" name="Dress" id="Dress" value="Dress"/>
-             </form> 
-                </MenuItem>
-       
-
-              <div className="display">
-        <Routes>
-
-        <Route path="Intro" element={
-            <Intro/>
-          } />
-
-
-          <Route path="Register" element={
-            <Register/>
-          } />
-          <Route path="SignIn" element={
-            <SignIn/>
-            } />
-             <Route path="Survey" element={
-            <Survey/>
-            } />
-              <Route path="Cart" element={
-            <Cart/>
-            } />
-            {/* <Route path="Dress" element={
-              <Dress/>
-            }/> */}
-        </Routes>
-              </div> 
-           
-            <MenuItem>
+        <Left>
+          <Language>EN</Language>
+          <SearchContainer>
+            <Input placeholder="Search" />
+            <Search style={{ color: "gray", fontSize: 16 }} />
+          </SearchContainer>
+        </Left>
+        <Center>
+          <Logo>Finesse</Logo>
+        </Center>
+        <Right>
+        <MenuItem>ABOUT US</MenuItem>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SURVEY</MenuItem>
+          <MenuItem>LOG IN</MenuItem>
+          <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
             </Badge>
-            </MenuItem>
-         
+          </MenuItem>
         </Right>
-          
       </Wrapper>
-    
     </Container>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
 

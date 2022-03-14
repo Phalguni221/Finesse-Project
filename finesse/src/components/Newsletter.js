@@ -26,7 +26,7 @@ const Desc = styled.div`
 
 const InputContainer = styled.div`
   width: 50%;
-  height: 40px;
+  height: 50px;
   background-color: white;
   display: flex;
   justify-content: space-between;

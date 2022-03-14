@@ -2,11 +2,11 @@ const dress = require('express').Router()
 const db = require('../models')
 
 
-dress.get('/dress/:id', (req, res) => {
+dress.get('/:id', (req, res) => {
   db.dress.findById(req.params.id)
   .populate('comments')
-  .then(place => {
-      console.log(place.comments)
+  .then(dress => {
+      console.log(dress.comments)
       res.render('/dress', { dress })
   })
   .catch(err => {
@@ -15,7 +15,7 @@ dress.get('/dress/:id', (req, res) => {
   })
 })
 
-dress.put('/dress/:id', (req, res) => {
+dress.put('/:id', (req, res) => {
   db.dress.findByIdAndUpdate(req.params.id, req.body)
   .then(() => {
       res.redirect(`/dress/${req.params.id}`)

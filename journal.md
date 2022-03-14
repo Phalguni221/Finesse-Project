@@ -69,16 +69,17 @@
 3/13/22 (Sun)
 44. Dicussed with partner about project over Zoom link (what to do next) -Sweta and Sriya
 45. Added "Shop Now" button to advertising sliders - Sriya 
-46. Imroved CSS of buttons on webasite - Sriya 
 47. Created Checkout.js - Sriya
 48. Added link from Checkout button in Cart.js to Checkout =.js ( button redirects to checkout page) - Sriya
 47. Cretaed App.js - Sweta
 49. Rendered each navbar component, along with homepage.js in App.js 
-    a. Each component has its own page with different CSs background - Sweta
+    a. Each component has its own page with different CSS background - Sweta
 50. Added pictures to Dress.js using props - Sweta
 
+
 3/14/22
-51. Rendered homepage in App.js -Sriya 
-52. Fixed slider carousel and changed arrow color and opacity (for easy visibility and acess) - Sriya
+51. Changes controller routes in back-end to redirect to dress.js routes - Sriya 
+52. Rendered homepage in App.js - Sriya 
+53. Fixed slider carousel and changed arrow color and opacity (for easy visibility and acess) - Sriya
 
 

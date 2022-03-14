@@ -1,3 +1,4 @@
+
 // import styled from "styled-components"
 // import {API_key} from "../API/Api"
 // import { createSlice } from "@reduxjs/toolkit";
@@ -81,16 +82,15 @@
 // import {API_key} from './Api/createApi'
 
 // on your node server
-// const serverApi = createApi({
-//   accessKey: 'API_key',
-//   //...other fetch options
-// });
+const serverApi = createApi({
+  accessKey: 'API_key',
+  //...other fetch options
+});
 
 
-// async function fetchDress() {
-//     let fetchDress = await fetch("https://unsplash.com/s/photos/dress", {
-//         method:"GET"
-//     })
-//     console.log(fetchDress)
-// }
-
+async function fetchDress() {
+    let fetchDress = await fetch("https://unsplash.com/s/photos/dress", {
+        method:"GET"
+    })
+    console.log(fetchDress)
+}

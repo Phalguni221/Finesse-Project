@@ -110,9 +110,10 @@ const Slider = () => {
 
         
     if (direction === "left") {
-      setSlideIndex(slideIndex < 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex < 0 ? slideIndex - 1 : 1);
     }
 
+  
     // else {
     //   setSlideIndex(slideIndex > 0 ? slideIndex + 1 : 1);
     // }

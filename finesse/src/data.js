@@ -44,8 +44,8 @@ export const sliderItems = [
     {
       id: 3,
       img: "https://images.unsplash.com/photo-1562137369-1a1a0bc66744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      title: "SPRING CARDIGANS",
-      desc: "Already prepared for a day but Nothing goes with camis? Don't Worry ! Update your wardrobe with a Spring Touch-UP!",
+      title: "SPRING DRESSES",
+      desc: "Already prepared for a day but can't decide on the perfect outfit? Don't Worry ! Update your wardrobe with a Spring Touch-UP!",
       bg: "fbf0f4",
     },
   ];

@@ -2,7 +2,7 @@ import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import Newsletter from "../components/Newsletter";
 
 const Container = styled.div``;
@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   padding: 20px;
   
 `;
-
 
 //style for titles
 const Title = styled.h1`

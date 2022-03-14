@@ -2,7 +2,8 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-
+import About from "./About"
+import {BrowserRouter, Link, Links, Route, Routes} from "react-router-dom"
 
 
 //For styled main container
@@ -97,7 +98,7 @@ const Navbar = () => {
           <Logo>Finesse</Logo>
         </Center>
         <Right>
-        <MenuItem>ABOUT US</MenuItem>
+        <MenuItem> ABOUT US</MenuItem>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SURVEY</MenuItem>
           <MenuItem>LOG IN</MenuItem>

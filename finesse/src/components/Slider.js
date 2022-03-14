@@ -4,9 +4,6 @@ import { useState } from "react";
 import { sliderItems } from "../data"; 
 
 
-
-
-
 const Container = styled.div`
     display: flex;
     margin-right:170px;
@@ -17,7 +14,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #fff7f7;
+  background-color: hotpink;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -29,7 +26,7 @@ const Arrow = styled.div`
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 1;
   z-index: 2;
 `;
 
@@ -107,12 +104,25 @@ const Button = styled.div`
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
+    // if (direction === "left") {
+    //   setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    // }
+
+        
     if (direction === "left") {
+      setSlideIndex(slideIndex < 0 ? slideIndex - 1 : 2);
+    }
+
+    // else {
+    //   setSlideIndex(slideIndex > 0 ? slideIndex + 1 : 1);
+    // }
+    
+    if (direction === "right") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
     }
-    
+
     else {
-      setSlideIndex(slideIndex < 0 ? slideIndex - 1 : 0);
+      setSlideIndex(slideIndex < 0 ? slideIndex + 1 : 1);
     }
   };
   return (

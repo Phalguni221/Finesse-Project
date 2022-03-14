@@ -77,6 +77,8 @@
     a. Each component has its own page with different CSs background - Sweta
 50. Added pictures to Dress.js using props - Sweta
 
-
+3/14/22
+51. Rendered homepage in App.js -Sriya 
+52. Fixed slider carousel and changed arrow color and opacity (for easy visibility and acess) - Sriya
 
 

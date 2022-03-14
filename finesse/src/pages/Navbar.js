@@ -10,6 +10,7 @@ import {BrowserRouter, Link, Links, Route, Routes} from "react-router-dom"
 const Container = styled.div`
   height: 60px;
   background-color: pink;
+  margin-left:1px;
 `;
 
 //parent wrapper for nav

@@ -1,3 +1,15 @@
+<<<<<<< HEAD:finesse/src/components/Cart.js
+import { Add, Remove, ShoppingCartOutlined } from "@material-ui/icons";
+import styled from "styled-components"
+import Checkout from './Checkout'
+
+const Container = styled.div`
+height:0.01px;
+width:700px;
+background-color: beige;
+margin-right:50px
+`;
+=======
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
@@ -6,6 +18,7 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 
 const Container = styled.div``;
+>>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791:finesse/src/pages/Cart.js
 
 
 // style for wrapper
@@ -19,6 +32,7 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   font-weight: 300;
   text-align: center;
+  margin-top:60px;
 `;
 
 
@@ -165,8 +179,8 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color:black;
+  // color: white;
   font-weight: 600;
 `;
 
@@ -270,8 +284,16 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>$ 80</SummaryItemPrice>
             </SummaryItem>
+<<<<<<< HEAD:finesse/src/components/Cart.js
+            <Button>
+            <form method="GET" action="Checkout">
+    <input type="Submit" name="Checkout" id="Checkout" value="Checkout"/>
+    </form>
+            </Button>
+=======
             
             <Button>CHECKOUT NOW</Button>
+>>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791:finesse/src/pages/Cart.js
           </Summary>
         </Bottom>
       </Wrapper>

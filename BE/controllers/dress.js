@@ -1,8 +1,16 @@
 const dress = require('express').Router()
 
-const db = require('../models/dress')
+const db = require('../models')
 
-dress.get('/dress', function (req, res, next) {
+dress.get('/', function (req, res, next) {
+  db.dress.find()
+  .then((dresses) => {
+res.render('pages/index', { dress })
+  })
+    .catch(err => {
+      console.log(err) 
+      res.render('error404')
+    })
   res.send("API is working properly")
 });
 

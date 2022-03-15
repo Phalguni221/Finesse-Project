@@ -1,0 +1,131 @@
+:root {
+    --first-color: #f5f5dc;
+    --second-color: black;
+    --highlight-color: gold;
+  }
+
+ html,body {
+  height:100%;
+  margin:0pt;
+} 
+
+  body {
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  
+  main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: beige;
+  }
+  
+  img {
+      width:200px;
+      height:200px;
+      flex-wrap:wrap;
+      position:relative; 
+
+  }
+
+  h1 {
+    color:blue;
+    font-size:25px;
+    font-style:arial;
+  }
+
+  h2 {
+    color:purple;
+    font-size:30px;
+    font-style:arial;
+  }
+
+h3 {
+    color:purple;
+  }
+
+h4 {
+  color:blue;
+  font-size:20px;
+    font-style:arial;
+}
+
+.btn-primary {
+  background-color:hotpink;
+}
+  .content {
+    min-height: 100%;
+  }
+
+  a {
+    color:hotpink;
+  }
+
+  p {
+    color:purple;
+    font-size:20px;
+  }
+
+  text {
+    color:white;
+  }
+
+  .column {
+    float: left;
+    width: 15.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .footer,
+  .push {
+    position:sticky;
+    font-size:18px;
+    height:200px;
+    top:10px;
+    bottom:0.1em;
+    background-color:black;
+    margin-top: -50px;
+  }
+
+  main {
+    text-align:center;
+  }
+
+  nav {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.navbar-brand {
+  width:25px;
+  height:15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: black;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+

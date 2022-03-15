@@ -17,9 +17,14 @@ mongoose
 
   //Rest API Routes
 
-
+  app.use('/dress', require('./controllers/dress'))
 
 
   app.listen(process.env.PORT || 3001, () => {
     console.log("Backend server is running!");
   });
+
+  
+app.post('/Dress', (req,res) => {
+  res.render('Dress')
+})

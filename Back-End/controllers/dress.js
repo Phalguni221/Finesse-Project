@@ -1,7 +1,8 @@
 const dress = require('express').Router()
-const db = require('../models')
+const db = require('../models/dress')
 
 
+//GET dress route
 dress.get('/:id', (req, res) => {
   db.dress.findById(req.params.id)
   .populate('comments')
@@ -12,6 +13,21 @@ dress.get('/:id', (req, res) => {
   .catch(err => {
       console.log('err', err)
       res.render('error404')
+  })
+})
+
+//Adding pagination
+dress.post('/add-dress', function(req, res, next) {
+  var dress = new Dress()
+
+  dress.category = req.body.category_name
+  dress.name = req.body.dress_name
+  dress.price = req.body.dress_price
+  dress.cover = faker.image.image()
+
+  dress.save(function(err) {
+      if (err) throw err
+      res.redirect('/add-dress')
   })
 })
 
@@ -26,7 +42,7 @@ dress.put('/:id', (req, res) => {
   })
 })
 
-dress.delete('/dress/:id', (req, res) => {
+dress.delete('/cart/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')

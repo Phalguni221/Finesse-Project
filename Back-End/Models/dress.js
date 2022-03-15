@@ -1,11 +1,14 @@
 const mongoose = require('mongoose')
 
-let descriptionSchema = new mongoose.Schema({
+var DressSchema = new mongoose.Schema({
+    id: {type: Number, default: 'Anonymous' },
+    img: {ype: String, default:'https://placekitten.com/200/300'},
     title: { type: String, default: 'Anonymous' },
     content: { type: String, default: '' },
     stars: { type: Number, required: true },
 })
 
-descriptionSchema.methods.showEstablished = function() {}
+DressSchema.methods.showEstablished = function() {}
   
-module.exports = mongoose.model('Description', descriptionSchema)
+module.exports = mongoose.model('Dress', DressSchema)
+

@@ -4,7 +4,31 @@ const mongoose = require("mongoose");
 
 require('dotenv').config({ path: require('find-config')('.env') });
 
+app.use('/dress', require('./controllers/dress'))
 
+app.post('/dress', (req,res) => {
+  res.render('dress')
+})
+
+app.get('/dress/edit', (req, res) => {
+  res.render('Editpage')
+})
+
+app.get('/dress/shoppingcart', (req, res) => {
+  res.render('Deletepage')
+})
+
+app.get('/dress/:id/comment', (req, res) => {
+  res.render('Commentpage')
+})
+
+app.post('/dress', (req,res) => {
+res.render('Dress')
+})
+
+app.listen(process.env.PORT || 3001, () => {
+  console.log("Backend server is running!");
+});
 
 
 mongoose
@@ -14,17 +38,3 @@ mongoose
     console.log(err); //For view errors
   });
 
-
-  //Rest API Routes
-
-  app.use('/dress', require('./controllers/dress'))
-
-
-  app.listen(process.env.PORT || 3001, () => {
-    console.log("Backend server is running!");
-  });
-
-  
-app.post('/Dress', (req,res) => {
-  res.render('Dress')
-})

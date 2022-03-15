@@ -1,19 +1,25 @@
 const dress = require('express').Router()
+
 const db = require('../models/dress')
 
-//GET dress route
-dress.get('/:id', (req, res) => {
-  db.dress.findById(req.params.id)
-  .populate('comments')
-  .then((dress) => {
-      console.log(dress.comments)
-      res.render('/dress', { dress })
-  })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
+dress.get('/dress', function (req, res, next) {
+  res.send("API is working properly")
+});
+
+module.exports = dress;
+// //GET dress route
+// dress.get('/:id', (req, res) => {
+//   db.dress.findById(req.params.id)
+//   .populate('comments')
+//   .then((dress) => {
+//       console.log(dress.comments)
+//       res.render('/dress', { dress })
+//   })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
 // //Adding pagination
 // dress.post('/add-dress', function(req, res, next) {
@@ -30,42 +36,42 @@ dress.get('/:id', (req, res) => {
 //   })
 // })
 
-dress.put('/:id', (req, res) => {
-  db.dress.findByIdAndUpdate(req.params.id, req.body)
-  .then(() => {
-      res.redirect(`/dress/${req.params.id}`)
-  })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
+// dress.put('/:id', (req, res) => {
+//   db.dress.findByIdAndUpdate(req.params.id, req.body)
+//   .then(() => {
+//       res.redirect(`/dress/${req.params.id}`)
+//   })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
-dress.delete('/cart/:id', (req, res) => {
-  let id = Number(req.params.id)
-  if (isNaN(id)) {
-    res.render('error404')
-  }
-  else if (!dress[id]) {
-    res.render('error404')
-  }
-  else {
-   dress.splice(id, 1)
-    res.redirect('/dress')
-  }
-})
+// dress.delete('/cart/:id', (req, res) => {
+//   let id = Number(req.params.id)
+//   if (isNaN(id)) {
+//     res.render('error404')
+//   }
+//   else if (!dress[id]) {
+//     res.render('error404')
+//   }
+//   else {
+//    dress.splice(id, 1)
+//     res.redirect('/dress')
+//   }
+// })
 
-dress.get('/:id/edit', (req, res) => {
-  db.dress.findById(req.params.id)
-  .populate('comments')
-  .then(place => {
-      console.log(place.comments)
-      res.render('/dress', { dress })
-  })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
+// dress.get('/:id/edit', (req, res) => {
+//   db.dress.findById(req.params.id)
+//   .populate('comments')
+//   .then(place => {
+//       console.log(place.comments)
+//       res.render('/dress', { dress })
+//   })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
   

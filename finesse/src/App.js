@@ -1,4 +1,4 @@
-
+require('dotenv').config()
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 

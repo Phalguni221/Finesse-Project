@@ -18,5 +18,12 @@ function Dress(dress) {
   </div>
     )
   })
-
+  return (
+    <Def>
+        <main>
+            <h1>Finesse the Dress!</h1>
+            {dressFormatted}
+        </main>
+    </Def>
+)
 }

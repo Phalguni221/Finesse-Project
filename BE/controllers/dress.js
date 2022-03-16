@@ -2,7 +2,7 @@ const dress = require('express').Router()
 
 const db = require('../models')
 
-dress.get('/', function (req, res, next) {
+dress.get('/', (req, res) => {
   db.Dress.find()
   .then((Dresses) => {
 res.render('dresses/index', { Dresses })
@@ -14,8 +14,32 @@ res.render('dresses/index', { Dresses })
   // res.send("API is working properly")
 });
 
-module.exports = dress;
-// //GET dress route
+router.post('/', (req, res) => {
+  db.Dress.create(req.body)
+  .then(() => {
+      res.redirect('/dresses')
+  })
+  .catch(err => {
+    console.log('err', err)
+      res.render('error404')
+  })
+})
+
+
+// dress.post('/', function (req, res, next) {
+//   db.dresses.create(req.body)
+//   .then(() => {
+// res.redirect('/places')
+//   })
+//     .catch(err => {
+//       console.log(err) 
+//       res.render('error404')
+//     })
+//   // res.send("API is working properly")
+// });
+
+
+// // //GET dress route
 // dress.get('/:id', (req, res) => {
 //   db.dress.findById(req.params.id)
 //   .populate('comments')
@@ -45,7 +69,7 @@ module.exports = dress;
 // })
 
 // dress.put('/:id', (req, res) => {
-//   db.dress.findByIdAndUpdate(req.params.id, req.body)
+//   db.Dress.findByIdAndUpdate(req.params.id, req.body)
 //   .then(() => {
 //       res.redirect(`/dress/${req.params.id}`)
 //   })
@@ -82,4 +106,5 @@ module.exports = dress;
 //   })
 // })
 
+module.exports = dress;
   

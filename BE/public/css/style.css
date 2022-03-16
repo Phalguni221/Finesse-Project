@@ -10,7 +10,7 @@
 } 
 
   body {
-    background-color: lightblue;
+    background-color: #eee;
     text-align: center;
   }
 
@@ -31,7 +31,7 @@
 
   h1 {
     color:blue;
-    font-size:25px;
+    font-size:35px;
     font-style:arial;
   }
 

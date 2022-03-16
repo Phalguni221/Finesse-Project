@@ -83,3 +83,6 @@
 53. Fixed slider carousel and changed arrow color and opacity (for easy visibility and acess) - Sriya
 
 
+
+
+MONGO_URI: MONGO_URI=mongodb://localhost:27017/Finesse-Project

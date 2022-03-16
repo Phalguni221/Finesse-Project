@@ -15,9 +15,9 @@ const Container2 = styled.div `
 
 //Parent-wrapper for nav 
 const Wrapper2 = styled.div `
-  padding: 100px 10px;
+  padding: 50px 10px;
   justify-content:"stylece-between;
-  margin-right:80px;
+  margin-right:8000px;
 `;
 
 export default function Survey () {

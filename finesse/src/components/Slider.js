@@ -24,7 +24,7 @@ const Arrow = styled.div`
   bottom: 0;
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
-  margin-top:870px;
+  margin-top:2300px;
   margin-right: 700px;
   margin-left:900px;
   cursor: pointer;

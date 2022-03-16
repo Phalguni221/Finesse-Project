@@ -2,7 +2,7 @@ import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Newsletter from "../components/Newsletter";
 
 const Container = styled.div``;
@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   font-weight: 300;
   text-align: center;
+  margin-top:50px;
 `;
 
 
@@ -26,7 +27,8 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
+  margin-top:50px;
 `;
 
 
@@ -172,8 +174,8 @@ const Button = styled.button`
 const Cart = () => {
   return (
     <Container>
-      <Navbar />
-      <Announcement />
+      {/* <Navbar /> */}
+      {/* <Announcement /> */}
 
 
       <Wrapper>
@@ -195,8 +197,8 @@ const Cart = () => {
           <Info>
             <Product>
               <ProductDetail>
-                
-                <Image src="https://images.unsplash.com/photo-1562039417-003435a1399e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=722&q=80" />
+       
+                {/* <Image src="https://images.unsplash.com/photo-1562039417-003435a1399e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=722&q=80" /> */}
                 <Details>
                   <ProductName>
                     <b>Product:</b> Red 
@@ -274,8 +276,8 @@ const Cart = () => {
           </Summary>
         </Bottom>
       </Wrapper>
-      <Newsletter/>
-      <Footer />
+      {/* <Newsletter/>
+      <Footer /> */}
     </Container>
   );
 };

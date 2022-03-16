@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 //For main container
 const Container = styled.div`
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
@@ -14,12 +14,14 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right:1000px;
+  margin-top:100px;
 `;
 
 //Fpr Wrapper
 const Wrapper = styled.div`
   width: 25%;
-  padding: 20px;
+  padding: 150px 150px;
   background-color: white;
   
 `;

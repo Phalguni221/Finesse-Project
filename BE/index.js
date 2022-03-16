@@ -25,6 +25,12 @@ app.get('/', (req, res) => {
   res.render('dresses/index')
 })
 
+
+app.post('/', (req,res) => {
+  res.render('dresses')
+})
+
+
 mongoose
   .connect("mongodb://localhost:27017/fashion") //for secret key
   .then(() => console.log("DB Connection Successfull!"))  //.then for prom
@@ -35,36 +41,5 @@ mongoose
 app.listen(process.env.PORT || 3500, () => {
   console.log("Backend server is running!");
 });
-
-// mongoose
-//   .connect("mongodb://localhost:27017/fashion") //for secret key
-//   .then(() => console.log("DB Connection Successfull!"))  //.then for prom
-//   .catch((err) => {
-//     console.log(err); //For view errors
-//   });
-
-
-// const dressRouter = require('./controllers/dress'); 
-// app.use('/', require('./controllers/dress'));
-
-// app.get('/', (req, res) => {
-//   res.render('home')
-// })
-
-// app.get('/dress/edit', (req, res) => {
-//   res.render('Editpage')
-// })
-
-// app.get('/dress/shoppingcart', (req, res) => {
-//   res.render('Deletepage')
-// })
-
-// app.get('/dress/:id/comment', (req, res) => {
-//   res.render('Commentpage')
-// })
-
-// app.post('/dress', (req,res) => {
-// res.render('Dress')
-// })
 
 

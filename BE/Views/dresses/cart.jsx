@@ -11,7 +11,7 @@ function Addtocart (data) {
           <br></br>
           <div className="form-group">
               <label htmlFor="name">Dress Name</label>
-               <input className="form-control" id="title" name="title" value = {data.place.title} required />
+               <input className="form-control" id="title" name="title" value = {data.dress.title} required />
           </div>
           <br></br>
 

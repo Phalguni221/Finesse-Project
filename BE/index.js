@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.static('public'))
 app.use( express.static('index') );
 
-// app.use(express.json());
+app.use(express.json());
 // app.use(express.static(path.join(_dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
@@ -27,19 +27,19 @@ app.listen(process.env.PORT || 3500, () => {
   console.log("Backend server is running!");
 });
 
-mongoose
-  .connect("mongodb://localhost:27017/Finesse") //for secret key
-  .then(() => console.log("DB Connection Successfull!"))  //.then for prom
-  .catch((err) => {
-    console.log(err); //For view errors
-  });
+// mongoose
+//   .connect("mongodb://localhost:27017/Finesse") //for secret key
+//   .then(() => console.log("DB Connection Successfull!"))  //.then for prom
+//   .catch((err) => {
+//     console.log(err); //For view errors
+//   });
 
 
-const dressRouter = require('./controllers/dress'); 
-app.use('/', dressRouter);
+// const dressRouter = require('./controllers/dress'); 
+app.use('/', require('./controllers/dress'));
 
 app.get('/', (req, res) => {
-  res.render('/dresses/index')
+  res.render('home')
 })
 
 // app.get('/dress/edit', (req, res) => {

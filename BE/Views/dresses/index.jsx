@@ -4,9 +4,9 @@ const Def = require('../default')
 function index (data) {
   let DressesFormatted = data.Dresses.map((Dress) => {
     return (
+      <Def>
       <div className="col-sm-6">
-        <body>
-    <h1>
+         <h1>Finesse the Dress!</h1>
           <a href={`/dresses/${Dress.id}`}>
           </a>
         <p className="title-center">
@@ -18,9 +18,8 @@ function index (data) {
         <p className="star-center">
         {Dress.star}
         </p>
-    </h1>
-    </body>
   </div>
+  </Def>
     )
   
   })
@@ -34,4 +33,4 @@ function index (data) {
 )
 }
 
-module.exports = index;
+module.exports = index

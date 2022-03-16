@@ -14,6 +14,17 @@ res.render('dresses/index', { Dresses })
   // res.send("API is working properly")
 });
 
+router.post('/', (req, res) => {
+  db.Dress.create(req.body)
+  .then(() => {
+      res.redirect('/dresses')
+  })
+  .catch(err => {
+    console.log('err', err)
+      res.render('error404')
+  })
+})
+
 
 // dress.post('/', function (req, res, next) {
 //   db.dresses.create(req.body)

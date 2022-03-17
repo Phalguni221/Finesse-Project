@@ -58,7 +58,9 @@ img: "https://images.unsplash.com/photo-1561181110-9452af164099?ixlib=rb-1.2.1&i
 desc: "Summertime is beach time! We have hundreds of ways for you to enjoy your summer with Sun, Sand and Beach. Wanna Explore ? Why not !!!! Just click the Button below to look at our summer collection #HOTDAYS #FUNDAYS",
       
  bg: "f5fafd"
-  
+
+____________________________________________________________________________________________________________________________________________________________________
+
  id: 2
  
  title: "TANK TOPS & CAMIS"
@@ -68,7 +70,9 @@ img: "https://images.unsplash.com/photo-1644358731342-2d83c9c8a474?ixlib=rb-1.2.
 desc: "Rib Knit, Trim Shirred, Halter Crop, Twist Hem Tank and Many More are avilable just a click away.",
       
 bg: "fcf1ed"
-  
+
+______________________________________________________________________________________________________________________________________________________________________
+
 id: 3
  
 title: "SPRING DRESSES"
@@ -78,7 +82,7 @@ img: "https://images.unsplash.com/photo-1562137369-1a1a0bc66744?ixlib=rb-1.2.1&i
 desc: "Already prepared for a day but can't decide on the perfect outfit? Don't Worry ! Update your wardrobe with a Spring Touch-UP!",
 
 bg: "fbf0f4"
-
+______________________________________________________________________________________________________________________________________________________________________
 
 CategoryItems (Category block on Homepage) from data.js
       

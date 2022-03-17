@@ -215,6 +215,11 @@ Survey Picture from Survey Page
 
 ____________________________________________________________________________________________________________________________________________________________________
 
+Cart Picture from Cart page
+
+Hakura T-shirt
+"https://images.unsplash.com/photo-1600502281976-e0e31b326509?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80g"
+
 
 
   

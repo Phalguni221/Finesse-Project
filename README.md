@@ -46,4 +46,60 @@ title: "Picture Perfect"
  
  img: "https://images.unsplash.com/photo-1600102427329-d5b2cde7e162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
        
+ Homepage pictures (SliderItems) from data.js
+ 
+
+id: 1
+
+title: "SUMMER TIME GOOD TIME"
+
+img: "https://images.unsplash.com/photo-1561181110-9452af164099?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+ 
+desc: "Summertime is beach time! We have hundreds of ways for you to enjoy your summer with Sun, Sand and Beach. Wanna Explore ? Why not !!!! Just click the Button below to look at our summer collection #HOTDAYS #FUNDAYS",
+      
+ bg: "f5fafd"
+  
+ id: 2
+ 
+ title: "TANK TOPS & CAMIS"
+
+img: "https://images.unsplash.com/photo-1644358731342-2d83c9c8a474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+   
+desc: "Rib Knit, Trim Shirred, Halter Crop, Twist Hem Tank and Many More are avilable just a click away.",
+      
+bg: "fcf1ed"
+  
+id: 3
+ 
+title: "SPRING DRESSES"
+      
+img: "https://images.unsplash.com/photo-1562137369-1a1a0bc66744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+     
+desc: "Already prepared for a day but can't decide on the perfect outfit? Don't Worry ! Update your wardrobe with a Spring Touch-UP!",
+
+bg: "fbf0f4"
+
+
+CategoryItems (Category block on Homepage) from data.js
+      
+id: 1
+      
+title: "SHIRT STYLE !!!"
+
+img: "https://images.unsplash.com/photo-1619679692192-30d912a55f8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80"
+  
+ id: 2
+      
+title: "OFF SHOULDERS !!!"
+      
+img: "https://images.unsplash.com/photo-1608709093358-13c7d0d6efda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    
+   
+ id: 3
+   
+title: "SHORT JACKETS !!!"
+    
+ img: "https://images.unsplash.com/photo-1548267088-9ba3061a5749?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+     
+  
    

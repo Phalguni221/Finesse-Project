@@ -189,6 +189,34 @@ ________________________________________________________________________________
   
 id:8
 img:"https://images.unsplash.com/photo-1562347174-7370ad83dc47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+
+
+
+_____________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________
+
+Background pictures from each navbar component page 
+
+Login Picture from Login Page
+
+"https://images.unsplash.com/photo-1641550285400-4adeb895f896?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+
+___________________________________________________________________________________________________________________________________________________________________
+
+Register Picture from Register Page 
+
+"https://images.unsplash.com/photo-1644424234553-2cd68a04bc96?ixlib=rb1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzOHxTNE1LTEFzQkI3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
+
+____________________________________________________________________________________________________________________________________________________________________
+
+Survey Picture from Survey Page
+
+"https://images.unsplash.com/photo-1644424234553-2cd68a04bc96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzOHxTNE1LTEFzQkI3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+
+____________________________________________________________________________________________________________________________________________________________________
+
+
+
   
      
   

@@ -67,6 +67,8 @@ title: "Picture Perfect"
  
  img: "https://images.unsplash.com/photo-1600102427329-d5b2cde7e162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
  
+ ____________________________________________________________________________________________________________________________________________________________________
+ 
        
  Homepage pictures (SliderItems) from data.js
  
@@ -185,8 +187,8 @@ ________________________________________________________________________________
  
  
   
-  id:8
-  img:"https://images.unsplash.com/photo-1562347174-7370ad83dc47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+id:8
+img:"https://images.unsplash.com/photo-1562347174-7370ad83dc47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
   
      
   

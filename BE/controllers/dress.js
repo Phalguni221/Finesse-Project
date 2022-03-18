@@ -1,11 +1,25 @@
-const dress = require('express').Router()
+const router = require('express').Router()
 
-const db = require('../models')
+const dress = require('../Models/dress')
 
-dress.get('/', (req, res) => {
-  db.Dress.find()
+router.get('/', (req, res) => {
+  dress.find()
   .then((Dresses) => {
+    // console.log(Dresses)
 res.render('dresses/index', { Dresses })
+  })
+    .catch(err => {
+      console.log(err) 
+      res.render('error404')
+    })
+  // res.send("API is working properly")
+});
+
+router.get('/cart', (req, res) => {
+  dress.find()
+  .then((Dresses) => {
+    // console.log(Dresses)
+res.render('dresses/cart')
   })
     .catch(err => {
       console.log(err) 
@@ -95,5 +109,5 @@ res.render('dresses/index', { Dresses })
 //   })
 // })
 
-module.exports = dress;
+module.exports = router;
   

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+
 var DressSchema = new mongoose.Schema({
     id: {type: Number, default: 'Anonymous' },
     img: {type: String, default:''},
@@ -11,5 +12,5 @@ DressSchema.methods.showEstablished = function() {
     console.log("dress database successful")
 }
   
-module.exports = mongoose.model('dress', DressSchema)
+module.exports = mongoose.model('Dresses', DressSchema)
 

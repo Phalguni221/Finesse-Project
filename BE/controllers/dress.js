@@ -15,18 +15,18 @@ res.render('dresses/index', { Dresses })
   // res.send("API is working properly")
 });
 
-router.get('/cart', (req, res) => {
-  dress.find()
-  .then((Dresses) => {
-    // console.log(Dresses)
-res.render('dresses/cart')
-  })
-    .catch(err => {
-      console.log(err) 
-      res.render('error404')
-    })
-  // res.send("API is working properly")
-});
+// router.get('/cart', (req, res) => {
+//   dress.find()
+//   .then((Dresses) => {
+//     // console.log(Dresses)
+// res.render('dresses/cart')
+//   })
+//     .catch(err => {
+//       console.log(err) 
+//       res.render('error404')
+//     })
+//   // res.send("API is working properly")
+// });
 
 
 router.post('/', (req, res) => {
@@ -52,6 +52,22 @@ res.redirect('/places')
   // res.send("API is working properly")
 });
 
+<<<<<<< HEAD
+// // //GET dress route
+router.get('/cart', (req, res) => {
+  dress.findById(req.params.id)
+  .populate('comments')
+  .then((Dresses) => {
+      console.log(dress.comments)
+      res.render('dresses/index', { Dresses })
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
+})
+=======
+>>>>>>> d2fec29ceed67766cc28e4cfce4f6281aafadbf4
 
 // //GET dress route
 dress.get('/:id', (req, res) => {
@@ -76,16 +92,10 @@ dress.post('/add-dress', function(req, res, next) {
   dress.price = req.body.dress_price
   dress.cover = faker.image.image()
 
-  dress.save(function(err) {
-      if (err) throw err
-      res.redirect('/add-dress')
-  })
-})
-
-dress.put('/:id', (req, res) => {
-  db.Dress.findByIdAndUpdate(req.params.id, req.body)
+router.put('/:id', (req, res) => {
+  dress.Dress.findByIdAndUpdate(req.params.id, req.body)
   .then(() => {
-      res.redirect(`/dress/${req.params.id}`)
+      res.redirect(`/dresses/${req.params.id}`)
   })
   .catch(err => {
       console.log('err', err)
@@ -93,7 +103,8 @@ dress.put('/:id', (req, res) => {
   })
 })
 
-dress.delete('/cart/:id', (req, res) => {
+
+router.delete('/cart', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
@@ -103,17 +114,18 @@ dress.delete('/cart/:id', (req, res) => {
   }
   else {
    dress.splice(id, 1)
-    res.redirect('/dress')
+    res.redirect('dresses/index')
   }
 })
 
-dress.get('/:id/edit', (req, res) => {
-  db.dress.findById(req.params.id)
+router.get('/:id/Edit', (req, res) => {
+ dress.findById(req.params.id)
   .populate('comments')
-  .then(place => {
+  .then(Dresses => {
       console.log(place.comments)
-      res.render('/dress', { dress })
-  })
+      res.render('dresses/Edit', { Dresses })
+    
+    })
   .catch(err => {
       console.log('err', err)
       res.render('error404')

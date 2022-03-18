@@ -33,6 +33,13 @@ function index (data) {
          <form method="GET" action="cart">
              <text><input type="Submit" name="Add to Cart" id="Add to Cart" value="Add to Cart"/></text>
              </form> 
+             <form method="GET" action="cart">
+             <text><input type="Submit" name="Add to Cart" id="Add to Cart" value="Add to Cart"/></text>
+             </form> 
+             <form method="GET" action="edit">
+             <text><input type="Submit" name="Edit" id="Edit" value="Edit"/></text>
+             </form> 
+          
          </div>
 
       </div> 

@@ -1,13 +1,14 @@
-
 const React = require('react')
+const Def = require('../default')
 
 
 function Edit (data) {
     return (
         <Def>
             <h1>Add a New Dress to the Collection!</h1>
-              <form method="POST"  action={`/cart/${data.dress.id}?_method=PUT`}>
-            <br></br>
+              {/* <form method="POST"  action={`/dresses/${data.dress.id}?_method=PUT`}>
+            <br></br> */}
+             <form>
             <div className="form-group">
                 <label htmlFor="title">Dress Name</label>
                  <input className="form-control" id="name" name="name" value = {data.Dress.title} required />
@@ -29,4 +30,4 @@ function Edit (data) {
         </Def>
             ) 
         }
-        module.export = Edit;
+        module.exports = Edit

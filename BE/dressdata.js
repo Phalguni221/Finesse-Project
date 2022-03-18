@@ -113,9 +113,22 @@
     {
         id:16,
         img: "https://images.unsplash.com/photo-1528493609210-b585031f0933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        title: "On the Runway",
+        title: "New Life",
         stars: 5.0
-    }
-    
+    },
 
+    {
+         id:17,
+         img: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=783&q=80",
+         title:"Runway Red",
+         stars:4.5
+    },
+    
+    {
+        id:18,
+        img:"https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJlc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        title:"Classic Velvet",
+        stars:5.0
+    }
+   
   ]

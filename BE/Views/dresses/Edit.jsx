@@ -27,7 +27,6 @@ function Edit (data) {
             <br></br>
         </form>
         </Def>
-            )
+            ) 
         }
-
         module.export = Edit;

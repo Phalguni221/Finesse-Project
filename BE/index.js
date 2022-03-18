@@ -15,15 +15,21 @@ app.use(methodOverride('_method'))
 require('dotenv').config({ path: require('find-config')('.env') });
 
 // const dressRouter = require('./controllers/dress'); 
-app.use('/dress', require('./controllers/dress'));
+app.use('/', require('./controllers/dress'));
+
+
+app.use('/cart', require('./controllers/dress'));
 
 app.post('/', (req,res) => {
   res.render('dresses')
 })
 
-app.get('/', (req, res) => {
-  res.render('dresses/index')
-})
+
+
+
+// app.get('/', (req, res) => {
+//   res.render('dresses/index')
+// })
 
 
 app.post('/', (req,res) => {

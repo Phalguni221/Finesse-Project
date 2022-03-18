@@ -6,7 +6,6 @@ function Def (html) {
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 <link rel="stylesheet" href="/css/style.css"></link>
-                <h1>Finesse</h1>
             </head>
             {html.children}
             <body>

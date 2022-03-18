@@ -30,7 +30,7 @@ res.render('dresses/index', { Dresses })
 
 
 router.post('/', (req, res) => {
-  db.Dress.create(req.body)
+  dress.create(req.body)
   .then(() => {
       res.redirect('/dresses')
   })
@@ -40,97 +40,94 @@ router.post('/', (req, res) => {
   })
 })
 
-dress.post('/', function (req, res, next) {
-  db.dresses.create(req.body)
-  .then(() => {
-res.redirect('/places')
-  })
-    .catch(err => {
-      console.log(err) 
-      res.render('error404')
-    })
-  // res.send("API is working properly")
-});
+// dress.post('/', function (req, res, next) {
+//   db.dresses.create(req.body)
+//   .then(() => {
+// res.redirect('/places')
+//   })
+//     .catch(err => {
+//       console.log(err) 
+//       res.render('error404')
+//     })
+//   // res.send("API is working properly")
+// });
 
-<<<<<<< HEAD
 // // //GET dress route
-router.get('/cart', (req, res) => {
-  dress.findById(req.params.id)
-  .populate('comments')
-  .then((Dresses) => {
-      console.log(dress.comments)
-      res.render('dresses/index', { Dresses })
-  })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
-=======
->>>>>>> d2fec29ceed67766cc28e4cfce4f6281aafadbf4
+// router.get('/cart', (req, res) => {
+//   dress.findById(req.params.id)
+//   .populate('comments')
+//   .then((Dresses) => {
+//       console.log(dress.comments)
+//       res.render('dresses/index', { Dresses })
+//   })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
 // //GET dress route
-dress.get('/:id', (req, res) => {
-  db.dress.findById(req.params.id)
-  .populate('comments')
-  .then((dress) => {
-      console.log(dress.comments)
-      res.render('/dress', { dress })
-  })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
+// router.get('/:id', (req, res) => {
+//   db.dress.findById(req.params.id)
+//   .populate('comments')
+//   .then((dress) => {
+//       console.log(dress.comments)
+//       res.render('/dress', { dress })
+//   })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
 //Adding pagination
-dress.post('/add-dress', function(req, res, next) {
-  var dress = new dress()
+// dress.post('/add-dress', function(req, res, next) {
+//   var dress = new dress()
 
-  dress.category = req.body.category_name
-  dress.name = req.body.dress_name
-  dress.price = req.body.dress_price
-  dress.cover = faker.image.image()
+//   dress.category = req.body.category_name
+//   dress.name = req.body.dress_name
+//   dress.price = req.body.dress_price
+//   dress.cover = faker.image.image()
 
-router.put('/:id', (req, res) => {
-  dress.Dress.findByIdAndUpdate(req.params.id, req.body)
-  .then(() => {
-      res.redirect(`/dresses/${req.params.id}`)
-  })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
+// router.put('/:id', (req, res) => {
+//   dress.Dress.findByIdAndUpdate(req.params.id, req.body)
+//   .then(() => {
+//       res.redirect(`/dresses/${req.params.id}`)
+//   })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
 
-router.delete('/cart', (req, res) => {
-  let id = Number(req.params.id)
-  if (isNaN(id)) {
-    res.render('error404')
-  }
-  else if (!dress[id]) {
-    res.render('error404')
-  }
-  else {
-   dress.splice(id, 1)
-    res.redirect('dresses/index')
-  }
-})
+// router.delete('/cart', (req, res) => {
+//   let id = Number(req.params.id)
+//   if (isNaN(id)) {
+//     res.render('error404')
+//   }
+//   else if (!dress[id]) {
+//     res.render('error404')
+//   }
+//   else {
+//    dress.splice(id, 1)
+//     res.redirect('dresses/index')
+//   }
+// })
 
-router.get('/:id/Edit', (req, res) => {
- dress.findById(req.params.id)
-  .populate('comments')
-  .then(Dresses => {
-      console.log(place.comments)
-      res.render('dresses/Edit', { Dresses })
+// router.get('/:id/Edit', (req, res) => {
+//  dress.findById(req.params.id)
+//   .populate('comments')
+//   .then(Dresses => {
+//       console.log(place.comments)
+//       res.render('dresses/Edit', { Dresses })
     
-    })
-  .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-  })
-})
+//     })
+//   .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//   })
+// })
 
 module.exports = router;
   

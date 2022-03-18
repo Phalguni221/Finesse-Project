@@ -18,7 +18,7 @@ require('dotenv').config({ path: require('find-config')('.env') });
 app.use('/', require('./controllers/dress'));
 
 
-app.use('/cart', require('./controllers/dress'));
+// app.use('/cart', require('./controllers/dress'));
 
 app.post('/', (req,res) => {
   res.render('dresses')
@@ -38,7 +38,7 @@ app.post('/', (req,res) => {
 
 
 mongoose
-  .connect("mongodb://localhost:27017/fashion") //for secret key
+  .connect("mongodb://localhost:27017/Finesse") //for secret key
   .then(() => console.log("DB Connection Successfull!"))  //.then for prom
   .catch((err) => {
     console.log(err); //For view errors

@@ -7,7 +7,7 @@ function AddDress (data) {
             <Def>
                   <main>
                 <h1>Add a New Dress</h1>
-            <form method="POST" action="dresses/index">
+            <form method="POST" action={`/dresses/${data.dress.id}?_method=PUT`}>
            
                 <div className="col-sm-6 col-md-4 col-lg-3">
                     <label htmlFor="name">Dress Name</label>

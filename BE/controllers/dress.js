@@ -29,19 +29,30 @@ res.render('dresses/index', { Dresses })
 // });
 
 
-// dress.post('/', function (req, res, next) {
-//   db.dresses.create(req.body)
-//   .then(() => {
-// res.redirect('/places')
-//   })
-//     .catch(err => {
-//       console.log(err) 
-//       res.render('error404')
-//     })
-//   // res.send("API is working properly")
-// });
+router.post('/', (req, res) => {
+  db.Dress.create(req.body)
+  .then(() => {
+      res.redirect('/dresses')
+  })
+  .catch(err => {
+    console.log('err', err)
+      res.render('error404')
+  })
+})
 
+dress.post('/', function (req, res, next) {
+  db.dresses.create(req.body)
+  .then(() => {
+res.redirect('/places')
+  })
+    .catch(err => {
+      console.log(err) 
+      res.render('error404')
+    })
+  // res.send("API is working properly")
+});
 
+<<<<<<< HEAD
 // // //GET dress route
 router.get('/cart', (req, res) => {
   dress.findById(req.params.id)
@@ -55,21 +66,31 @@ router.get('/cart', (req, res) => {
       res.render('error404')
   })
 })
+=======
+>>>>>>> d2fec29ceed67766cc28e4cfce4f6281aafadbf4
 
-// //Adding pagination
-// dress.post('/add-dress', function(req, res, next) {
-//   var dress = new dress()
+// //GET dress route
+dress.get('/:id', (req, res) => {
+  db.dress.findById(req.params.id)
+  .populate('comments')
+  .then((dress) => {
+      console.log(dress.comments)
+      res.render('/dress', { dress })
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
+})
 
-//   dress.category = req.body.category_name
-//   dress.name = req.body.dress_name
-//   dress.price = req.body.dress_price
-//   dress.cover = faker.image.image()
+//Adding pagination
+dress.post('/add-dress', function(req, res, next) {
+  var dress = new dress()
 
-//   dress.save(function(err) {
-//       if (err) throw err
-//       res.redirect('/add-dress')
-//   })
-// })
+  dress.category = req.body.category_name
+  dress.name = req.body.dress_name
+  dress.price = req.body.dress_price
+  dress.cover = faker.image.image()
 
 router.put('/:id', (req, res) => {
   dress.Dress.findByIdAndUpdate(req.params.id, req.body)
@@ -103,7 +124,8 @@ router.get('/:id/Edit', (req, res) => {
   .then(Dresses => {
       console.log(place.comments)
       res.render('dresses/Edit', { Dresses })
-  })
+    
+    })
   .catch(err => {
       console.log('err', err)
       res.render('error404')

@@ -14,19 +14,23 @@
     text-align: center;
   }
 
+.brlarge {
+  display:block;
+  margin-bottom:2200px
+}
   
   main {
     margin-right: 20px;
     margin-left: 20px;
+    
     background-color: whitesmoke;
   }
   
   .column {
 	  float: left;
-	  width: 30%;
+	  width: 50%;
     height:30%;
-	  padding: 10px;
-    float:right;
+	  padding: 20px;
    
 	}
   img {
@@ -35,7 +39,9 @@
       flex-wrap:wrap;
       position:relative; 
       display:inline-block;
-
+      margin-right: 30px; 
+      border: 2px solid red;
+      margin-bottom: 30px;
   }
 
   input {
@@ -45,6 +51,8 @@
     padding:2px;
     text-align:center;
   }
+
+
 
   h1 {
     color:blue;

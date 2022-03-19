@@ -7,7 +7,7 @@ function Edit (data) {
         <Def>
             <h1>Add a New Dress to the Collection!</h1>
             <br></br>
-              <form method="POST" action={`/dresses/${data.id}?_method=PUT`}>
+              <form method="POST" action={`/dresses/${data.id}?_method=POST`}>
             <br></br>
             <div className="form-group">
                 <label htmlFor="title">Dress Name</label>
@@ -34,4 +34,5 @@ function Edit (data) {
         </Def>
             ) 
         }
+
         module.exports = Edit

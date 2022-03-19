@@ -6,7 +6,7 @@ return (
     <Def>
           <link rel="stylesheet" href="/css/style.css"/>
         <main>
-          <h1>{data.name}</h1>
+          <h1>{data.dress.name}</h1>
       
              <img src={data.img} alt={data.title}/>
             <h2>

@@ -24,7 +24,7 @@ app.post('/', (req,res) => {
   res.render('dresses')
 })
 
-app.get('/Edit', (req, res) => {
+app.get('/dresses/Edit', (req, res) => {
   res.render('Editpage')
 })
 
@@ -36,11 +36,11 @@ app.get('*', (req, res) => {
 //   res.render('dresses/index')
 // })
 
-
-
-app.post('/', (req,res) => {
-  res.render('dresses')
+app.get('/dresses/delete', (req, res) => {
+  res.render('Deletepage')
 })
+
+
 
 
 mongoose

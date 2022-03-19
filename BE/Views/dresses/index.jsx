@@ -31,33 +31,34 @@ function index (data) {
          {Dress.stars}
          </p>
          <form method="GET" action="cart">
-             <text><input type="Submit" name="Add to Cart" id="Add to Cart" value="Add to Cart"/></text>
+             <text><input type="Submit" name="Add to Cart" id="button1" value="Add to Cart"/></text>
              </form> 
           <br></br>
           <br></br>
               <p>
              <form method="GET" action="Edit">
-             <text><input type="Submit" name="Edit" id="Edit" value="Edit"/></text>
+             <text><input type="Submit" name="Edit" id="button2" value="Edit"/></text>
              </form> 
+              </p>
+              <br></br>
+            
+              <p>
+             <a href={`${data.id}/delete`}></a>
+             <input type="Submit" name="Delete" id="button3" value="Delete"/>
              </p>
+             <br></br>
+           
              <p>
              <form method="GET" action="show">
-             <text><input type="Submit" name="show" id= "show" value="show"/></text>
+             <text><input type="Submit" name="show" id= "button4" value="show"/></text>
              </form> 
              </p>
-
-             {/* <p>
-             <a href={`${data.place.id}/edit`}> 
-                 <button class type="submit" className="btn btn-danger">
-                    Edit
-                </button> 
-              </a> 
-             </p> */}
         <br></br>
         <br></br>
         <hr></hr>
          </div>
-      </div> 
+         </div>
+  
       </Def>
     )
     
@@ -70,6 +71,7 @@ function index (data) {
           <span class = "brlarge"></span>
           <span class = "brlarge"></span>
           <span class = "brlarge"></span>
+          <footer>
           <h1> Addressing Customer's AddDress</h1>
     <p>Got any personal suggestions or favorites? Please add any choice of your dress that you like from our provider Unsplash! 
       Click the button "AddDress" below to access 
@@ -80,14 +82,14 @@ function index (data) {
       We promise to have it in stock within 5 business days for you to purchase!</p>
       <form method="GET" action="AddDress">
              <text><input type="Submit" name="AddDress" id="AddDress" value="AddDress"/></text>
+             </form>
                 <br></br>
             <p>Link to Unsplash:</p>
-            <p>
-            <a src="https://unsplash.com/s/photos/dress"></a>
-            </p>
-             </form>
+            
+          <h2><a href="https://unsplash.com/s/photos/dress">Unsplash: Dress Images</a></h2>
+              <br></br>
              <br></br>
-             <br></br>
+          </footer>
         </main>
   
 )

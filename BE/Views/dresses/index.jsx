@@ -29,12 +29,20 @@ function index (data) {
          </p>
          <p className="star-center">
          {Dress.stars}
-         </p>
-         <form method="GET" action="cart">
+          </p>
+              <p>
+             <form method="GET" action="show">
+             <text><input type="Submit" name="show" id= "button4" value="show"/></text>
+             </form> 
+             </p>
+             <br></br>
+             <p>
+               <form method="GET" action="Cart">
              <text><input type="Submit" name="Add to Cart" id="button1" value="Add to Cart"/></text>
              </form> 
           <br></br>
           <br></br>
+             </p>
               <p>
              <form method="GET" action="Edit">
              <text><input type="Submit" name="Edit" id="button2" value="Edit"/></text>
@@ -48,11 +56,6 @@ function index (data) {
              </p>
              <br></br>
            
-             <p>
-             <form method="GET" action="show">
-             <text><input type="Submit" name="show" id= "button4" value="show"/></text>
-             </form> 
-             </p>
         <br></br>
         <br></br>
         <hr></hr>

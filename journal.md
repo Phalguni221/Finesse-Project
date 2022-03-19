@@ -77,12 +77,35 @@
 50. Added pictures to Dress.js using props - Sweta
 
 
-3/14/22
+3/14/22 (Mon)
 51. Changes controller routes in back-end to redirect to dress.js routes - Sriya 
 52. Rendered homepage in App.js - Sriya 
 53. Fixed slider carousel and changed arrow color and opacity (for easy visibility and acess) - Sriya
 
+3/15/22 (Tues)
+54. Worked on improving finishing touches for front-end - Sweta and Sriya 
+55. Worked on cart page - Sweta 
+56. Discussed on what to say in tomorrow's demo - Sweta and Sriya 
+
+3/16/22 (Wed)
+57. Prepared for presentation - Sweta and Sriya 
+58. Discussed on what to mention in demo - Sweta and Sriya 
+59. Discussed of present flaws that need to be fixed - Sweta and Sriya 
+60. Agreeed imperative to get back-end to appear on server - Sweta and Sriya 
+
+3/17/22 (Thurs)
+61. Worked on controller routes for back-end - Sriya
+62. Got Finesse Dress page to appear on back-end server (recieved teaching assistance from Jen Vannier, professor) - Sriya
+
+3/18/22 (Fri)
+63. Imporved format, color scheme, and layout of Finesse Dress page (code in index.jsx) - Sriya
+64. Worked further on routes (tried to make them work) - Sriya
+65. Got JSX pages (Edit, AddDress) to appear on server - Sriya
+66. Created password encryption - Sweta
+67. Can save user login and password information to site -Sweta
+
+3/19/22 (Sat)
+68. Worked further on controller and index.js routes - aimed to get CRUD functionality - Sriya 
+69. Put routes
 
 
-
-MONGO_URI: MONGO_URI=mongodb://localhost:27017/Finesse-Project

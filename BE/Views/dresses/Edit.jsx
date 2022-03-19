@@ -5,8 +5,8 @@ const Def = require('../default')
 function Edit (data) {
     return (
         <Def>
-            <h1>Add a New Dress to the Collection!</h1>
-            <br></br>
+            <main>
+            <h1>Edit a Dress!</h1>
               <form method="POST" action={`/dresses/${data.id}?_method=POST`}>
             <br></br>
             <div className="form-group">
@@ -31,6 +31,7 @@ function Edit (data) {
             <br></br>
             <input type="Submit" name="submit" id="submit" value="submit"/>
         </form>
+        </main>
         </Def>
             ) 
         }

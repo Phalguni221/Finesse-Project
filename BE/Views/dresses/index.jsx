@@ -36,10 +36,23 @@ function index (data) {
           <br></br>
           <br></br>
               <p>
-             <form method="GET" action="edit">
+             <form method="GET" action="Edit">
              <text><input type="Submit" name="Edit" id="Edit" value="Edit"/></text>
              </form> 
              </p>
+             <p>
+             <form method="GET" action="show">
+             <text><input type="Submit" name="show" id= "show" value="show"/></text>
+             </form> 
+             </p>
+
+             {/* <p>
+             <a href={`${data.place.id}/edit`}> 
+                 <button class type="submit" className="btn btn-danger">
+                    Edit
+                </button> 
+              </a> 
+             </p> */}
         <br></br>
         <br></br>
         <hr></hr>
@@ -67,7 +80,11 @@ function index (data) {
       We promise to have it in stock within 5 business days for you to purchase!</p>
       <form method="GET" action="AddDress">
              <text><input type="Submit" name="AddDress" id="AddDress" value="AddDress"/></text>
-          
+                <br></br>
+            <p>Link to Unsplash:</p>
+            <p>
+            <a src="https://unsplash.com/s/photos/dress"></a>
+            </p>
              </form>
              <br></br>
              <br></br>

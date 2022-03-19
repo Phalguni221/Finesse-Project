@@ -4,7 +4,11 @@ Finesse is an e-commerce website that caters to all customers who want to look t
 
 User interfrace and accessibility was taken into consideration to create a unique and speical experience for each online user!
 
-We hope that you find this website engaging and useful to use to meet your clothing needs!
+Images from Unpslash,a website hosting stock photographhy, were used to obtain sample dress images. 
+
+The link to Unsplash dress page is listed below:
+
+"https://unsplash.com/s/photos/dress"
 
 
 Credits for Unsplash Pictures:

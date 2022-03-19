@@ -31,6 +31,7 @@ function AddDress (data) {
                 <br></br>
             <input type="Submit" name="Add a dress!" id="Add a dress!" value="Add a dress!"/>
             </form>
+            <footer></footer>
             </main>
             </Def>
             )

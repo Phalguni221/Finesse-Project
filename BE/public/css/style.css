@@ -6,11 +6,11 @@
 
  html,body {
   height:100%;
-  margin:0pt;
+  margin:10pt;
 } 
 
   body {
-    background-color: #eee;
+    background-color:skyblue;
     text-align: center;
   }
 
@@ -20,27 +20,27 @@
 }
   
   main {
-    margin-right: 20px;
-    margin-left: 20px;
-    
-    background-color: whitesmoke;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color:lightgoldenrodyellow;
   }
   
   .column {
 	  float: left;
 	  width: 50%;
     height:30%;
-	  padding: 20px;
+	  padding: 10px;
    
 	}
+
   img {
       width:250px;
       height:350px;
       flex-wrap:wrap;
       position:relative; 
       display:inline-block;
-      margin-right: 30px; 
-      border: 2px solid red;
+      margin-right: 10px; 
+      border: 10px solid goldenrod;
       margin-bottom: 30px;
   }
 
@@ -63,10 +63,12 @@
     color:purple;
     font-size:30px;
     font-style:arial;
+    font:bold;
   }
 
 h3 {
     color:purple;
+   
   }
 
 h4 {
@@ -96,22 +98,22 @@ h4 {
   }
 
   #button1{
-    width: 300px;
+    width: 250px;
     height: 40px;
 }
 
 #button2{
-    width: 300px;
+    width: 250px;
     height: 40px;
 }
 
 #button3{
-  width:300px;
+  width:250px;
   height:40px
 }
 
 #button4{
-  width:300px;
+  width:250px;
   height:40px
 }
 
@@ -123,7 +125,7 @@ h4 {
   .column {
     float: left;
     width: 15.33%;
-    padding: 10px;
+    padding: 11.7px;
   }
 
   .row::after {

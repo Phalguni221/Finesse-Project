@@ -56,9 +56,27 @@
 36. Created Sub Categories for shopping -Sweta
 
 3/11/22 (Fri)
-37.
+37. Worked on improving Navbar -Sriya 
+38. Created Shopping cart .js - Sweta
 
 3/12/22 (Sat)
-38.
+39. Discussed important points/speaking skills for demo -Sweta and Sriya
+40. Presented demo to class
+41. Resolved Github conflicts with mergers -Sweta and Sriya
+42. Added new Navbar link to Cart.js (can access shopping cart from this link) -Sriya
+43. Helped partner with nerge conflicts 
+
+3/13/22 (Sun)
+44. Dicussed with partner about project over Zoom link (what to do next) -Sweta and Sriya
+45. Added "Shop Now" button to advertising sliders - Sriya 
+46. Imroved CSS of buttons on webasite - Sriya 
+47. Created Checkout.js - Sriya
+48. Added link from Checkout button in Cart.js to Checkout =.js ( button redirects to checkout page) - Sriya
+47. Cretaed App.js - Sweta
+49. Rendered each navbar component, along with homepage.js in App.js 
+    a. Each component has its own page with different CSs background - Sweta
+50. Added pictures to Dress.js using props - Sweta
+
+
 
 

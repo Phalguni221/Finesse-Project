@@ -8,6 +8,7 @@ const Container = styled.div`
   margin: 3px;
   height: 70vh;
   position: relative;
+  justify-content: center;
 `;
 
 //For Image 
@@ -35,8 +36,10 @@ const Info = styled.div`
 //For Title
 const Title = styled.h1`
     color:white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left:190px;
     display: flex
+    text-align: center;
 `;
 
 
@@ -58,7 +61,13 @@ const CategoryItem = ({item}) => {
             <Image src={item.img}/>
                 <Info>
                     <Title>{item.title}</Title>
-                    <Button>SHOP NOW</Button>
+                    <br></br>
+                    {/* <Button>SHOP NOW</Button> */}
+                    <Button>
+              <form method="GET" action="Dress">
+             <text><input type="Submit" name="Shop Now!" id="Shop Now!" value="Shop Now!"/></text>
+             </form> 
+              </Button>
                 </Info>
         </Container>
     );

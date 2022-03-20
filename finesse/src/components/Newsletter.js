@@ -5,7 +5,9 @@ import styled from "styled-components";
 const Container = styled.div`
   height: 60vh;
   background-color: #fcf5f5;
-  display: flex;
+  display:flex;
+  margin: 3px;
+  margin-right: 10px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -53,7 +55,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <Send />
+          <Send/>
         </Button>
       </InputContainer>
     </Container>

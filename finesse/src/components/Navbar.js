@@ -4,9 +4,17 @@ import React from "react";
 import styled from "styled-components";
 
 
+<<<<<<< HEAD
+
+
+//React styled component in use
+const Container = styled.div `
+  height: 70px;
+=======
 //For styled main container
 const Container = styled.div`
   height: 60px;
+>>>>>>> 14309d692bef608434cc84ae6b58e7c99faea791
   background-color: pink;
 `;
 

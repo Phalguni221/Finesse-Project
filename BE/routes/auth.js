@@ -18,6 +18,8 @@ router.post("/register", async (req, res) => {
         const savedUser = await newUser.save();
         res.status(201).json(savedUser);
       } catch (err) {
+
+        console.log(err)
         res.status(500).json(err);
       }
     });
@@ -41,16 +43,19 @@ router.post('/login', async (req, res) => {
           user.password,
            process.env.PASS_SEC
        );
-
+        console.log(user.password)
         //pass into string
-       const originalPassword = hashedPassword.toString(CryptoJS.enc.Utf8);
+       const OriginalPassword = hashedPassword.toString(CryptoJS.enc.Utf8);
 
-       const inputPassword = req.body.password;
+       console.log(OriginalPassword)
+      //  const inputPassword = req.body.password;
       
 
       //If nO PASS the response will be 401
-       originalPassword != inputPassword && 
-          res.status(401).json("Wrong Password");
+    //   if(OriginalPassword !== req.body.password) {
+    //     return res.status(401).json("Wrong credentials!") 
+    // }
+
 
       const accessToken = jwt.sign(
       {
@@ -65,7 +70,7 @@ router.post('/login', async (req, res) => {
        res.status(200).json({ accessToken});
 
   }catch(err){
-    
+      console.log(err)
       res.status(500).json(err);
     
   }

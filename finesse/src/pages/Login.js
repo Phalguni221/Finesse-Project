@@ -92,7 +92,7 @@ const Login = () => {
                  <div>
                  <form action="#" method="POST">
                 <label for="Password">Password<span class="required-field">*</span></label>
-                    <input type="text"  minlength="2" maxlength="35" id="lastname" name="lastname" placeholder="lastname" required /><br></br><br></br>
+                    <input type="text"  minlength="2" maxlength="35" id="lastname" name="password" placeholder="lastname" required /><br></br><br></br>
 
                     <Button>Log In</Button><br></br>
                     <Button>Survey Page</Button>

@@ -1,9 +1,9 @@
 import './App.css'
 import { Badge } from "@material-ui/core";
-import { Search, ShoppingCartOutlined } from '@material-ui/icons';
+
 import React from 'react'
 import styled from 'styled-components'
-import Footer from './Footer'
+
 
 const Container2 = styled.div `
  height:0.01px;

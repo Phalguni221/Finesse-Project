@@ -1,8 +1,8 @@
 import styled from "styled-components";
-
+import Thanks from "./Thanks"
 
 const Container = styled.div`
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
@@ -14,12 +14,15 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right:40px;
+  margin-top:80px;
 `;
 
 const Wrapper = styled.div`
   width: 40%;
-  padding: 20px;
+  padding: 40px;
   background-color: white;
+  margin-right:100px;
   
 `;
 
@@ -60,6 +63,7 @@ const Register = () => {
     <Container>
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
+        <form method="GET" action="Thanks">
         <Form>
           <Input placeholder="name" />
           <Input placeholder="last name" />
@@ -73,6 +77,7 @@ const Register = () => {
           </Agreement>
           <Button>CREATE</Button>
         </Form>
+        </form>
       </Wrapper>
     </Container>
   );

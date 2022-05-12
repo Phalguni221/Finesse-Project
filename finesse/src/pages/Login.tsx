@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Survey from "./Survey"
+
 
 //For main container
 const Container = styled.div`
@@ -96,7 +98,7 @@ const Login = () => {
                 <label for="Password">Password<span class="required-field">*</span></label>
                     <input type="text"  minlength="2" maxlength="35" id="lastname" name="lastname" placeholder="lastname" required /><br></br><br></br>
 
-                    <Button>Log In</Button><br></br>
+                    <Button src="Survey">Log In</Button><br></br>
                     <Button>Survey Page</Button>
                     </form>
                     

@@ -143,7 +143,7 @@ const Summary = styled.div`
   flex: 1;
   border: 0.5px solid lightgray;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   height: 50vh;
 `;
 

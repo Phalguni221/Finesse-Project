@@ -1,8 +1,8 @@
 import styled from "styled-components";
-
+import Thanks from "./Thanks"
 
 const Container = styled.div`
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
@@ -10,16 +10,20 @@ const Container = styled.div`
     ),
     url("https://images.unsplash.com/photo-1644424234553-2cd68a04bc96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzOHxTNE1LTEFzQkI3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60")
       center;
+    margin-right:70px;
+    margin-top:100px;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+
 `;
 
 const Wrapper = styled.div`
   width: 40%;
-  padding: 20px;
+  padding: 60px;
   background-color: white;
+  align-items:center;
   
 `;
 
@@ -31,6 +35,7 @@ const Title = styled.h1`
 const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
+  align-items:center;
 `;
 
 const Input = styled.input`
@@ -63,7 +68,7 @@ const Survey = () => {
     <Wrapper>
     <h1>Take this Survey to get recommended clothes to your style and suiting!</h1>
     <br></br><br></br>
-    <form method="GET" action="Jackets">
+    <form method="GET" action="Thanks">
     <div>
                     <label for="color">What is your favorite color?</label><br></br>
                     <input type="text" minlength="3" maxlength="22" id="firstname" name="colorname" placeholder="colorname" required />
